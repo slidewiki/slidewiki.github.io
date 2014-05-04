@@ -13,7 +13,12 @@
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/prettify.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/gh-fork-ribbon.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/gh-fork-ribbon.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+    
+    <!-- Fonts from Google Fonts -->
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato:300,400,900" />
+    
     <!--[if lt IE 9]>
         <link rel="stylesheet" type="text/css" href="assets/css/gh-fork-ribbon.ie.css">
     <![endif]-->
@@ -28,195 +33,212 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <!-- Custom styles for this template -->
-    <link rel="stylesheet" type="text/css" href="assets/css/carousel.css">
   </head>
 <!-- NAVBAR
 ================================================== -->
-  <body onload='prettyPrint()'>
-    <div class="navbar-wrapper">
+ <body>
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top">
       <div class="container">
-
-        <div class="navbar navbar-inverse navbar-static-top" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#">HTWK-App</a>
-            </div>
-            <div class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li class="divider"></li>
-                    <li class="dropdown-header">Nav header</li>
-                    <li><a href="#">Separated link</a></li>
-                    <li><a href="#">One more separated link</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><b>HTWK-APP</b></a>
         </div>
-
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="https://groups.google.com/forum/#!forum/htwk-app" target="_blank">Bereits Betatester? </a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
       </div>
     </div>
 
-
-    <!-- Carousel
-    ================================================== -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <div class="github-fork-ribbon-wrapper right">
-        <div class="github-fork-ribbon">
-            <a href="https://github.com/simonwhitaker/github-fork-ribbon-css">Fork me on GitHub</a>
-        </div>
-    </div>
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="item active">
-          <img data-src="holder.js/900x500/auto/#777:#7a7a7a/text:First slide" alt="First slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Example headline.</h1>
-              <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
-              <pre class="prettyprint">
-          &lt;script&gt;
-          function display_awesomeness();
-          {
-            alert("Awesomeness!");
-          }
-          &lt;/script&gt;
-        &lt;form&gt;
-          &lt;input type="button" value="Click me!" onclick="display_awesomeness()" /&gt;
-        &lt;/form&gt;
-        </pre>
-
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img data-src="holder.js/900x500/auto/#666:#6a6a6a/text:Second slide" alt="Second slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Another example headline.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img data-src="holder.js/900x500/auto/#555:#5a5a5a/text:Third slide" alt="Third slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>One more for good measure.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-    </div><!-- /.carousel -->
-
-
-
-    <!-- Marketing messaging and featurettes
-    ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
-
-    <div class="container marketing">
-
-      <!-- Three columns of text below the carousel -->
+  <div id="headerwrap">
+    <div class="container">
       <div class="row">
-        <div class="col-lg-4">
-          <img class="img-circle" data-src="holder.js/140x140" alt="Generic placeholder image">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" data-src="holder.js/140x140" alt="Generic placeholder image">
-          <h2>Heading</h2>
-          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" data-src="holder.js/140x140" alt="Generic placeholder image">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
-
-
-      <!-- START THE FEATURETTES -->
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-        </div>
+        <div class="col-lg-6">
+          <h1>Die neue HTWK-App</h1>
+          <h3 style="color:white;">wenn du Betatester werden willst, dann trage hier deine Mailadresse ein oder nutzte den Link oben Rechts...</h3>
+          <form class="form-inline" role="form" action="https://script.google.com/macros/s/AKfycbzIwPEiAhVQ4PwQmtuAqfb1cw1Saj6mW5GqSjwnj_yWxSUomUkP/exec" method="get" id="contact">
+            <div class="form-group">
+              <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="E-Mail Adresse hier eintragen...">
+            </div>
+            <button type="submit" class="btn btn-warning btn-lg">Anfrage starten!</button>
+          </form>         
+        </div><!-- /col-lg-6 -->
+        <div class="col-lg-6">
+          <img class="img-responsive" src="assets/img/top.png" alt="">
+        </div><!-- /col-lg-6 -->
+        
+      </div><!-- /row -->
+    </div><!-- /container -->
+  </div><!-- /headerwrap -->
+  
+  
+  <div class="container">
+    <div class="row mt centered">
+      <div class="col-lg-6 col-lg-offset-3">
+        <h1>Your Landing Page<br/>Looks Wonderful Now.</h1>
+        <h3>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</h3>
       </div>
+    </div><!-- /row -->
+    
+    <div class="row mt centered">
+      <div class="col-lg-4">
+        <img src="assets/img/ser01.png" width="180" alt="">
+        <h4>1 - Browser Compatibility</h4>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
+      </div><!--/col-lg-4 -->
 
-      <hr class="featurette-divider">
+      <div class="col-lg-4">
+        <img src="assets/img/ser02.png" width="180" alt="">
+        <h4>2 - Email Campaigns</h4>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
 
-      <div class="row featurette">
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-        </div>
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
+      </div><!--/col-lg-4 -->
+
+      <div class="col-lg-4">
+        <img src="assets/img/ser03.png" width="180" alt="">
+        <h4>3 - Gather Your Notes</h4>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
+
+      </div><!--/col-lg-4 -->
+    </div><!-- /row -->
+  </div><!-- /container -->
+  
+  <div class="container">
+    <hr>
+    <div class="row centered">
+      <div class="col-lg-6 col-lg-offset-3">
+         <form class="form-inline" role="form" action="https://script.google.com/macros/s/AKfycbzIwPEiAhVQ4PwQmtuAqfb1cw1Saj6mW5GqSjwnj_yWxSUomUkP/exec" method="get" id="contact">
+            <div class="form-group">
+              <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="E-Mail Adresse hier eintragen...">
+            </div>
+            <button type="submit" class="btn btn-warning btn-lg">Anfrage starten!</button>
+          </form>        
       </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-        </div>
+      <div class="col-lg-3"></div>
+    </div><!-- /row -->
+    <hr>
+  </div><!-- /container -->
+  
+  <div class="container">
+    <div class="row mt centered">
+      <div class="col-lg-6 col-lg-offset-3">
+        <h1>Flatty is for Everyone.</h1>
+        <h3>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</h3>
       </div>
+    </div><!-- /row -->
+  
+    <! -- CAROUSEL -->
+    <div class="row mt centered">
+      <div class="col-lg-6 col-lg-offset-3">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+          </ol>
+        
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="assets/img/p01.png" alt="">
+            </div>
+            <div class="item">
+              <img src="assets/img/p02.png" alt="">
+            </div>
+            <div class="item">
+              <img src="assets/img/p03.png" alt="">
+            </div>
+          </div>
+        </div>      
+      </div><!-- /col-lg-8 -->
+    </div><!-- /row -->
+  </div><! --/container -->
+  
+  <div class="container">
+    <hr>
+    <div class="row centered">
+      <div class="col-lg-6 col-lg-offset-3">
+        <form class="form-inline" role="form" action="https://script.google.com/macros/s/AKfycbzIwPEiAhVQ4PwQmtuAqfb1cw1Saj6mW5GqSjwnj_yWxSUomUkP/exec" method="get" id="contact">
+            <div class="form-group">
+              <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="E-Mail Adresse hier eintragen...">
+            </div>
+            <button type="submit" class="btn btn-warning btn-lg">Anfrage starten!</button>
+          </form>          
+      </div>
+      <div class="col-lg-3"></div>
+    </div><!-- /row -->
+    <hr>
+  </div><!-- /container -->
 
-      <hr class="featurette-divider">
-
-      <!-- /END THE FEATURETTES -->
-
-
-      <!-- FOOTER -->
-      <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2014 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-      </footer>
-
-    </div><!-- /.container -->
+  <div class="container">
+    <div class="row mt centered">
+      <div class="col-lg-6 col-lg-offset-3">
+        <h1>Our Awesome Team.<br/>Design Lovers.</h1>
+        <h3>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</h3>
+      </div>
+    </div><!-- /row -->
+    
+    <div class="row mt centered">
+      <div class="col-lg-6">
+        <img class="img-circle" src="https://avatars.githubusercontent.com/u/1965431?" width="140" alt="">
+        <h4>Henri Knochenhauer</h4>
+        <p>Server-Applikation</p>
+        <p><i class="glyphicon glyphicon-send"></i> <i class="glyphicon glyphicon-phone"></i> <i class="glyphicon glyphicon-globe"></i></p>
+      </div><!--/col-lg-4 -->
+      <div class="col-lg-6">
+        <img class="img-circle" src="https://avatars.githubusercontent.com/u/855967?" width="140" alt="">
+        <h4>Roy Meissner</h4>
+        <p>Smartphone-App</p>
+        <p><i class="glyphicon glyphicon-send"></i> <i class="glyphicon glyphicon-phone"></i> <i class="glyphicon glyphicon-globe"></i></p>
+      </div><!--/col-lg-4 -->
+    </div><!-- /row -->
+    <div class="row mt centered">
+     <div class="col-lg-4">
+        <img class="img-circle" src="https://avatars.githubusercontent.com/u/5786188?" width="140" alt="">
+        <h4>Matthias Tempel</h4>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
+        <p><i class="glyphicon glyphicon-send"></i> <i class="glyphicon glyphicon-phone"></i> <i class="glyphicon glyphicon-globe"></i></p>
+      </div><!--/col-lg-4 -->
+       <div class="col-lg-4">
+        <img class="img-circle" src="https://avatars.githubusercontent.com/u/5863661?" width="140" alt="">
+        <h4>Benjamin Westphal</h4>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
+        <p><i class="glyphicon glyphicon-send"></i> <i class="glyphicon glyphicon-phone"></i> <i class="glyphicon glyphicon-globe"></i></p>
+      </div><!--/col-lg-4 -->
+      
+       <div class="col-lg-4">
+        <img class="img-circle" src="https://avatars.githubusercontent.com/u/5785373?" width="140" alt="">
+        <h4>Hubertus Willuhn</h4>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
+        <p><i class="glyphicon glyphicon-send"></i> <i class="glyphicon glyphicon-phone"></i> <i class="glyphicon glyphicon-globe"></i></p>
+      </div><!--/col-lg-4 -->
+    </div>
+  </div><!-- /container -->
+  
+  <div class="container">
+    <hr>
+    <div class="row centered">
+      <div class="col-lg-6 col-lg-offset-3">
+        <form class="form-inline" role="form" action="https://script.google.com/macros/s/AKfycbzIwPEiAhVQ4PwQmtuAqfb1cw1Saj6mW5GqSjwnj_yWxSUomUkP/exec" method="get" id="contact">
+            <div class="form-group">
+              <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="E-Mail Adresse hier eintragen...">
+            </div>
+            <button type="submit" class="btn btn-warning btn-lg">Anfrage starten!</button>
+          </form>        
+      </div>
+      <div class="col-lg-3"></div>
+    </div><!-- /row -->
+    <hr>
+    <p class="centered">Created by BlackTie.co - Attribution License 3.0 - 2013</p>
+  </div><!-- /container -->
 
 
     <!-- Bootstrap core JavaScript
@@ -225,7 +247,13 @@
     <script type="text/javascript" src="assets/js/jquery-2.1.0.min.js"></script>
     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/js/docs.min.js"></script>
-    <!--[if lt IE 9]><script type='text/javascript' src='assets/javascript/html5.js'></script><![endif]-->
+    <!--[if lt IE 9]><script type="text/javascript" src="assets/javascript/html5.js"></script><![endif]-->
     <script type="text/javascript" src="assets/javascript/prettify.js"></script>
+    <script type="text/javascript" >
+        $( "#contact" ).submit(function( event ) {
+            event.preventDefault();
+            $(this).submit();
+        });
+    </script
   </body>
 </html>
