@@ -37,6 +37,7 @@
 <!-- NAVBAR
 ================================================== -->
  <body>
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
 
     <!-- Fixed navbar -->
     <div class="navbar navbar-default navbar-fixed-top">
@@ -63,9 +64,9 @@
         <div class="col-lg-6">
           <h1>Die neue HTWK-App</h1>
           <h3 style="color:white;">wenn du Betatester werden willst, dann trage hier deine Mailadresse ein oder nutzte den Link oben Rechts...</h3>
-          <form class="form-inline" role="form" action="https://script.google.com/macros/s/AKfycbzIwPEiAhVQ4PwQmtuAqfb1cw1Saj6mW5GqSjwnj_yWxSUomUkP/exec" method="get" id="contact">
+          <form class="form-inline" role="form" action="https://script.google.com/macros/s/AKfycbzIwPEiAhVQ4PwQmtuAqfb1cw1Saj6mW5GqSjwnj_yWxSUomUkP/exec" method="get" id="contact" target="hidden_iframe">
             <div class="form-group">
-              <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="E-Mail Adresse hier eintragen...">
+              <input type="email" name="email" class="form-control" id="inputEmail" placeholder="E-Mail Adresse hier eintragen...">
             </div>
             <button type="submit" class="btn btn-warning btn-lg">Anfrage starten!</button>
           </form>         
@@ -250,10 +251,10 @@
     <!--[if lt IE 9]><script type="text/javascript" src="assets/javascript/html5.js"></script><![endif]-->
     <script type="text/javascript" src="assets/javascript/prettify.js"></script>
     <script type="text/javascript" >
-        $( "#contact" ).submit(function( event ) {
-            event.preventDefault();
-            $(this).submit();
-        });
+      function checkBeforeSubmit(){
+        document.getElementById('contact').submit();
+        //document.getElementById('success').innerHTML='Submitted';
+      }
     </script
   </body>
 </html>
