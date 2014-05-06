@@ -150,3 +150,11 @@ i {
 	font-weight: 300;
 	letter-spacing: 1px;
 }
+
+.carousel-control{
+    background-image: none!important; 
+}
+
+.carousel-inner .item{
+    min-height:400px;
+}
