@@ -7,6 +7,27 @@
  * URL: http://blacktie.co
  */
 
+.gps_ring{
+    -webkit-animation-name: pulsate;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite
+}
+@-webkit-keyframes pulsate {
+    0% { opacity: 0.3}
+    50% { opacity: 1.0}
+    100% { opacity: 0.3}
+}
+.navbar{
+    font-weight: 500;
+}
+ .listing li{
+    padding-bottom: 5px;
+    color: white;
+    font-weight: 500;
+
+ }
+
 body {
   background-color: #f2f2f2;
     font-family: 'Lato', sans-serif;
@@ -125,7 +146,7 @@ i {
 	/* background: url(../img/bg01.jpg) no-repeat center top; */
 	background-color: #3498db;
 	margin-top: -20px;
-	padding-top:200px;
+	padding-top:160px;
 	background-attachment: relative;
 	background-position: center center;
 	min-height: 650px;
