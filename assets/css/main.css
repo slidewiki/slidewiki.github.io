@@ -7,6 +7,28 @@
  * URL: http://blacktie.co
  */
 
+.appTest{
+	background-color: #FFAA00;
+	border-radius: 15px;
+	padding-bottom: 10px;
+}
+
+.appTest:hover{
+	background-color: #FFBB00;
+	/*some sort of animation instead*/
+}
+
+.contribute{
+	color: black;
+	background-color: #FFAA00;
+	border-radius: 15px;
+	padding: 5px 20px 8px 20px;
+}
+
+.contribute span,.contribute img{
+	padding-right: 5px;
+}
+
 .gps_ring{
     -webkit-animation-name: pulsate;
     -webkit-animation-duration: 3s;
