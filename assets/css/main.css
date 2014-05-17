@@ -48,17 +48,7 @@ iframe#presentation{
     height: 460px;
     margin-left: 41px;
     border: none;
-    margin-top: 40px    
-}
-.appTest{
-	background-color: #FFAA00;
-	border-radius: 15px;
-	padding-bottom: 10px;
-}
-
-.appTest:hover{
-	background-color: #FFBB00;
-	/*some sort of animation instead*/
+    margin-top: 40px;
 }
 
 .contribute{
@@ -66,10 +56,15 @@ iframe#presentation{
 	background-color: #FFAA00;
 	border-radius: 15px;
 	padding: 5px 20px 8px 20px;
+	margin: 10px 0 0 0;
 }
 
 .contribute span,.contribute img{
 	padding-right: 5px;
+}
+
+.contribute img{
+	margin-top: -0.7%;
 }
 
 .gps_ring{
@@ -239,8 +234,20 @@ i {
 
 .carousel-control{
     background-image: none!important; 
+    margin-bottom: 170px;
 }
 
 .carousel-inner .item{
     min-height:480px;
+}
+
+@media screen and (max-width: 768px) {
+  .carousel-control{
+    background-image: none!important; 
+    margin-bottom: 270px;
+  }
+
+  .carousel-inner .item{
+    min-height: 370px;
+  }
 }
