@@ -80,8 +80,11 @@
             <button type="submit" class="btn btn-warning btn-lg">Anfrage starten!</button>
           </form>  -->       
         </div><!-- /col-lg-6 -->
-        <div class="col-lg-6">
-          <img class="img-responsive" src="assets/img/top.png" alt="">
+        <div class="col-lg-6" id="presentation">
+          <!--<img class="img-responsive" src="assets/img/top.png" alt="">-->
+          <div class="overlay">
+            <div class="txt center-block">Willst du die HTWK-App jetzt interaktiv testen?<br> dann klicke HIER</div>
+          </div>
         </div><!-- /col-lg-6 -->
         
       </div><!-- /row -->
@@ -124,7 +127,7 @@
     </div><!-- /row -->
 
     <div class="row mt centered">
-      <a href="#">
+      <a href="https://rawgit.com/HTWK-App/Smartphone-App/online-presentation/www/index.html" target ="_blank">
       <div class="col-lg-6 col-lg-offset-3 appTest">
         <h2>Würdest du die App gern einmal interaktiv ausprobieren? Einfach hier klicken!</h2>
       </div>
@@ -267,6 +270,12 @@
         document.getElementById('contact').submit();
         //document.getElementById('success').innerHTML='Submitted';
       }
-    </script
+
+      $("div#presentation div.overlay").one("click", function(){
+        $('div#presentation').append('<iframe src="https://rawgit.com/HTWK-App/Smartphone-App/online-presentation/www/index.html" id="presentation"></iframe>');
+          $(this).toggle();
+
+      });
+    </script>
   </body>
 </html>

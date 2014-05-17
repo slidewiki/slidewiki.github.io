@@ -6,7 +6,50 @@
  * Version: 1.0
  * URL: http://blacktie.co
  */
+div#presentation div.overlay{
+    position:absolute;
+    top:49px;
+    left:56px;
+    right:143px;
+    bottom:140px;
+    background-color:rgba(0, 0, 0, 0.55);
+    background: url(data:;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAABl0RVh0U29mdHdhcmUAUGFpbnQuTkVUIHYzLjUuNUmK/OAAAAATSURBVBhXY2RgYNgHxGAAYuwDAA78AjwwRoQYAAAAAElFTkSuQmCC) repeat scroll transparent\9;
+    color:white;
 
+        /* Firefox */
+    display:-moz-box;
+    -moz-box-pack:center;
+    -moz-box-align:center;
+
+    /* Safari and Chrome */
+    display:-webkit-box;
+    -webkit-box-pack:center;
+    -webkit-box-align:center;
+
+    /* W3C */
+    display:box;
+    box-pack:center;
+    box-align:center;
+}
+div.overlay div.txt{
+     width:50%;
+     text-align: center;
+     font-weight: 500;
+}
+
+div#presentation{
+    background-image: url(../img/top2.png);
+    width:540px;
+    height:640px;
+}
+
+iframe#presentation{
+    width: 347px;
+    height: 460px;
+    margin-left: 41px;
+    border: none;
+    margin-top: 40px    
+}
 .appTest{
 	background-color: #FFAA00;
 	border-radius: 15px;
@@ -168,7 +211,7 @@ i {
 	/* background: url(../img/bg01.jpg) no-repeat center top; */
 	background-color: #3498db;
 	margin-top: -20px;
-	padding-top:160px;
+	padding-top:100px;
 	background-attachment: relative;
 	background-position: center center;
 	min-height: 650px;
@@ -199,5 +242,5 @@ i {
 }
 
 .carousel-inner .item{
-    min-height:400px;
+    min-height:480px;
 }
