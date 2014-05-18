@@ -67,6 +67,10 @@ iframe#presentation{
 	margin-top: -0.7%;
 }
 
+.retired{
+    font-size: 11px;
+}
+
 .gps_ring{
     -webkit-animation-name: pulsate;
     -webkit-animation-duration: 3s;
