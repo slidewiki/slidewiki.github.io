@@ -65,6 +65,7 @@ div#presentation-mobile{
 }
 
 .contribute span,.contribute img{
+	color: black;
 	padding-right: 5px;
 }
 
@@ -253,10 +254,10 @@ i {
 @media screen and (max-width: 768px) {
   .carousel-control{
     background-image: none!important; 
-    margin-bottom: 270px;
+    margin-bottom: 160px;
   }
 
   .carousel-inner .item{
-    min-height: 370px;
+    min-height: 460px;
   }
 }
