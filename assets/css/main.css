@@ -6,6 +6,9 @@
  * Version: 1.0
  * URL: http://blacktie.co
  */
+ .white {
+    color:white;
+ }
 div#presentation div.overlay{
     position:absolute;
     top:49px;
@@ -14,7 +17,6 @@ div#presentation div.overlay{
     bottom:140px;
     background-color:rgba(0, 0, 0, 0.55);
     background: url(data:;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAABl0RVh0U29mdHdhcmUAUGFpbnQuTkVUIHYzLjUuNUmK/OAAAAATSURBVBhXY2RgYNgHxGAAYuwDAA78AjwwRoQYAAAAAElFTkSuQmCC) repeat scroll transparent\9;
-    color:white;
 
         /* Firefox */
     display:-moz-box;
@@ -43,6 +45,7 @@ div#presentation{
     height:640px;
 }
 
+
 iframe#presentation{
     width: 347px;
     height: 460px;
@@ -51,11 +54,13 @@ iframe#presentation{
     margin-top: 40px;
 }
 
+div#presentation-mobile{
+    background-image: url(../img/top.png);
+    width:422px;
+    height:500px;
+}
+
 .contribute{
-	color: black;
-	background-color: #FFAA00;
-	border-radius: 15px;
-	padding: 5px 20px 8px 20px;
 	margin: 10px 0 0 0;
 }
 
