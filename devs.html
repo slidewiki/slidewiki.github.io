@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="de">
+
   <head>
+
  		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="" />
-    <meta name="author" content="" />
+    <meta name="author" content="Roy Meissner" />
+
     <link rel="shortcut icon" href="assets/img/favicon.png" />
-    <meta name="google-site-verification" content="dacvyXPj86SyrsSxOI68z2Inbu1Zw4NinkiKZKaOnUE" />
 
-    <title>HTWK-App</title>
+    <title>HTWK-App - Entwickler</title>
 
-    <!-- Bootstrap core CSS -->
-		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+		<!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/prettify.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/gh-fork-ribbon.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
@@ -26,106 +30,84 @@
       <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-  </head>
-<!-- NAVBAR
-================================================== -->
- <body>
+	</head>
+	<body>
 
-    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+		<!-- Fixed navbar -->
+		<div class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#"><b>HTWK-APP</b></a>
+				</div>
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a class="page-scroll" href="#">Punkt</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 
-    <!-- Fixed navbar -->
-    <div class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>-->
-          <a class="navbar-brand" href="#"><b>HTWK-APP</b></a>
-        </div>
-        <!--<div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><div class="gps_ring"></div></li>
-          </ul>
+		<div id="headerwrap">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6">
+						<h1>Informationen zum Aufbau der HTWK-App</h1>
+						<br>
+						<ul class="listing">
+							<li>Was steckt eigentlich hinter der HTWK-App?</li>
+							<li>Welche Frameworks haben wir benutzt und warum?</li>
+							<li>Kann ich mich einbringen?</li>
+						</ul>
+						<br>
+						<h4 style="color:white">Das und vieles mehr werde ich dir auf dieser Seite erklären!</h4>
+						<br><br>
+					</div><!-- /col-lg-6 -->
+				</div><!-- /row -->
+			</div><!-- /container -->
+		</div><!-- /headerwrap -->
 
-        </div>-->
+
+		<div class="container">
+
+			<div class="row mt centered">
+				<div class="col-lg-6 col-lg-offset-3">
+					<h1>Client-Server Architektur</h1>
+					<h3>Die HTWK-App setzt auf die altbekannte Client-Server Architektur. Die App ist der Server und der Server der Client....äh, natürlich andersherum ;)</h3>
+				</div>
+			</div><!-- /row -->
+
+      <div class="row mt centered">
+
+				<div class="col-lg-4">
+					<img src="https://cdn1.iconfinder.com/data/icons/hawcons/32/699578-icon-68-document-file-app-128.png" width="128" height="128" alt="">
+					<h4>Webseite</h4><hr>
+					<p>Die App wurde als Webseite entworfen und setzt samit auf HTML, CSS und Javascript. Damit können wir den Studenten und Mitarbeitern der HTWK eine moderne Oberfläche präsentieren, die leicht umgebaut werden kann. Wir benutzten JQuery und Javascript für die Logik, JQueryMobile für die UI und FontAwesome für Icons. Daten, die die App anzeigt, werden immer brandneu und unter Nutzung neuster Technologien vom Server bezogen.</p>
+				</div><!--/col-lg-4 -->
+
+				<div class="col-lg-4">
+					<img src="https://cdn1.iconfinder.com/data/icons/technology-and-hardware-2/200/vector_66_13-128.png" width="128" height="128" alt="">
+					<h4>Server</h4><hr>
+					<p>Die Server-Anwendung besteht aus mehreren Microservices, die vornehmlich in Java und Scala geschrieben sind. Unter Java wird das Spring-Framework, unter Scala das Play-Framework benutzt. Der Server bieten eine HTTP-Rest Schnittstelle an, von der JSON formatierte Daten bezogen werden können.</p>
+				</div><!--/col-lg-4 -->
+
+				<div class="col-lg-4">
+					<img src="https://cdn0.iconfinder.com/data/icons/20-flat-icons/128/paste.png" width="128" height="121" alt="">
+					<h3>App</h3>
+					<hr>
+					<p>Das Framework Apache Cordova transformiert die Webseite in eine App, die in alle gängigen App-Stores gestellt werden kann. Für den Google-Play Store haben wir das schon gemacht, für alle anderen Suchen wir noch Möglichkeiten...(ganz ehrlich Apple...100$ pro Jahr für ein Non-Profit Projekt?!).</p>
+					<p>Under the Hood wird ein Browser auf deinem Smartphone gestartet, der die Webseite lädt. Nur die Bedienelemente sind ausgeblendet.</p>
+				</div><!--/col-lg-4 -->
       </div>
-    </div>
 
-  <div id="headerwrap">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6">
-          <h1>Die Hochschule jeden Tag in der Tasche</h1><br>
-          <ul class="listing">
-            <li>Keine Lust jeden Tag gefühlte tausend mal nach deinen Noten zu schauen?</li>
-            <li>Schon mal nicht gewusst wo das Gebäude steht, in dem du gleich Unterricht hast?</li>
-            <li>Gibt es eigentlich deinen Lieblingssportkurs an der HTWK?</li>
-          </ul><br>
-          <h4 style="color:white">
-            Wenn dir diese Fragen bekannt vorkommen, dann solltest du eindeutig einen Blick auf die neue HTWK-App werfen!
-          </h4>
-          <br><br>
-          <div class="text-center">
-          	<a href="//play.google.com/store/apps/details?id=com.HTWK_App.App" target="_blank">
-							<img alt="Get it on Google Play" src="assets/images/play_store.png" style="padding: 0 0 40px 0;"/>
-						</a>
-          </div>
-        </div><!-- /col-lg-6 -->
-        <div class="col-lg-6 visible-md visible-lg white " id="presentation">
-	         <a href="#">
-            <div class="overlay">
-              <div class="txt center-block">Willst du die HTWK-App mal ausprobieren?<br><br> Einfach auf das Tablet klicken ;)</div>
-            </div>
-	        </a>
-        </div><!-- /col-lg-6 -->
-        <div class="col-lg-6 visible-xs visible-sm white" id="presentation-mobile">
-        </div><!-- /col-lg-6 -->
-
-      </div><!-- /row -->
-    </div><!-- /container -->
-  </div><!-- /headerwrap -->
-
-
-  <div class="container">
-    <div class="row mt centered">
-      <div class="col-lg-6 col-lg-offset-3">
-        <h1>Den Studienalltag im Blick<br/>und das mit modernem Design</h1>
-        <h3>Dabei wird vor allem auf Aktualität und Sicherheit geachtet: Alles was du siehst wird speziell für dich zusammengestellt und dabei durch modernste Technik gesichert.</h3>
-      </div>
-    </div><!-- /row -->
-
-    <div class="row mt centered">
-      <div class="col-lg-4">
-        <img src="assets/img/news.png" width="130" alt="">
-        <h4>News</h4><hr>
-	  <p>Aktuelle News der HTWK und der Region Leipzig</p>
-      </div><!--/col-lg-4 -->
-
-      <div class="col-lg-4">
-        <img src="assets/img/info.png" width="130" alt="">
-        <h4>Informationen</h4><hr>
-        <p>Speiseplan deiner Lieblingsmensa</p>
-        <p>Sportkurse und deren Infos</p>
-        <p>Mitarbeiter- und Dozentenverzeichnis</p>
-        <p>Gebäude-Infos und Navigation</p>
-        <p>Wichtige Verweise, die man immer mal braucht</p>
-        <p>Einrichtung des WLans</p>
-      </div><!--/col-lg-4 -->
-
-      <div class="col-lg-4">
-        <img src="assets/img/students.png" width="130" alt="">
-        <h4>Studentenalltag</h4><hr>
-        <p>Dein persönlicher Stundenplan</p>
-        <p>Übersicht über deine Noten</p>
-        <p>Abfrage deiner HTWK-Mails</p>
-        <p>Suche nach einem leerem Seminarraum</p>
-      </div><!--/col-lg-4 -->
-    </div><!-- /row -->
-
-    <hr />
-  </div><!-- /container -->
+			<hr>
+		</div><!-- /container -->
 
 
   <div class="container">
@@ -161,7 +143,7 @@
       <a class="right carousel-control" href="#carousel-example-generic" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
       </div><!-- /col-lg-8 -->
     </div><!-- /row -->
-    <hr />
+    <hr>
   </div><!--/container -->
 
 <div class="container">
@@ -264,7 +246,7 @@
 
       });
       function UnCryptMailto(s, shift) {
-        var n=0;
+        var n=0
         var r="";
         for(var i=0;i<s.length;i++) {
           n=s.charCodeAt(i);
