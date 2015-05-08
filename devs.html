@@ -49,6 +49,12 @@
 						<li>
 							<a class="page-scroll" href="#cs">Client-Server</a>
 						</li>
+            <li>
+							<a class="page-scroll" href="#app">Die App</a>
+						</li>
+            <li>
+							<a class="page-scroll" href="#opensource">Open-Source</a>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -92,20 +98,20 @@
 					<img src="assets/img/website.png" width="128" height="128" alt="">
 					<h4>Webseite</h4><hr>
 					<p>Die App wurde als Webseite entworfen und setzt damit auf HTML, CSS und Javascript. Damit können wir den Studenten und Mitarbeitern der HTWK eine moderne Oberfläche präsentieren, die leicht umgebaut werden kann.</p>
-          <p> Wir benutzten JQuery und Javascript für die Logik, JQueryMobile für die UI und FontAwesome für Icons. Daten, die die App anzeigt, werden immer brandneu und unter Nutzung neuster Technologien vom Server bezogen.</p>
+          <p> Wir benutzten <a href="//jquery.com/" target="_blank">JQuery</a> und Javascript für die Logik, <a href="//jquerymobile.com/" target="_blank">JQueryMobile</a> für die UI und <a href="//fortawesome.github.io/Font-Awesome/" target="_blank">FontAwesome</a> für Icons. Daten, die die App anzeigt, werden immer brandneu und unter Nutzung neuster Technologien vom Server bezogen.</p>
 				</div><!--/col-lg-4 -->
 
 				<div class="col-lg-4">
 					<img src="assets/img/server.png" width="128" height="128" alt="">
 					<h4>Server</h4><hr>
-					<p>Die Server-Anwendung besteht aus mehreren Microservices, die vornehmlich in Java und Scala geschrieben sind. Unter Java wird das Spring-Framework, unter Scala das Play-Framework benutzt. Der Server bieten eine HTTP-Rest Schnittstelle an, von der JSON formatierte Daten bezogen werden können.</p>
+					<p>Die Server-Anwendung besteht aus mehreren <a href="//en.wikipedia.org/wiki/Microservices" target="_blank">Microservices</a>, die vornehmlich in Java und Scala geschrieben sind. Unter Java wird das <a href="//projects.spring.io/spring-framework/" target="_blank">Spring-Framework</a>, unter Scala das <a href="//www.playframework.com" target="_blank">Play-Framework</a> benutzt. Der Server bieten eine HTTP-Rest Schnittstelle an, von der JSON formatierte Daten bezogen werden können.</p>
 				</div><!--/col-lg-4 -->
 
 				<div class="col-lg-4">
 					<img src="assets/img/app.png" width="128" height="128" alt="">
 					<h3>App</h3>
 					<hr>
-					<p>Das Framework Apache Cordova transformiert die Webseite in eine App, die in alle gängigen App-Stores gestellt werden kann. Für den Googles Play-Store haben wir das schon gemacht, für alle anderen suchen wir noch Möglichkeiten...(ganz ehrlich Apple...100$ pro Jahr für ein Non-Profit Projekt?!).</p>
+					<p>Das Framework <a href="//cordova.apache.org" target="_blank">Apache Cordova</a> transformiert die Webseite in eine App, die in alle gängigen App-Stores gestellt werden kann. Für den Googles Play-Store haben wir das schon gemacht, für alle anderen suchen wir noch Möglichkeiten...(ganz ehrlich Apple...100$ pro Jahr für ein Non-Profit Projekt?!).</p>
 					<p>Under the Hood wird ein Browser auf deinem Smartphone gestartet, der die Webseite lädt. Nur die Bedienelemente des Browsers fehlen.</p>
 				</div><!--/col-lg-4 -->
       </div>
@@ -114,121 +120,82 @@
 		</div><!-- /container -->
 
 
-  <div class="container">
-    <div class="row mt centered">
-      <div class="col-lg-6 col-lg-offset-3">
-        <h1>Was ist derzeit in Planung?</h1>
-      </div>
-    </div><!-- /row -->
-
-    <!-- CAROUSEL -->
-    <div class="row mt centered">
-      <div class="col-lg-6 col-lg-offset-3">
-        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-          <!-- Indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-          </ol>
-
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner">
-            <div class="item active">
-              <img src="assets/img/p01.png" alt="">
-	      			<p>Derzeit gibt es noch einige kleinere Bugs in der App. Diese werden wir mit Nachdruck ausmerzen, damit die App auf so vielen Geräten wie möglich fehlerfrei funktioniert.</p>
-            </div>
-            <div class="item">
-              <img src="assets/img/p03.png" alt="">
-				      <p>Querverweise innerhalb der App werden demnächst kein Problem mehr sein. Damit findest du noch schneller die Informationen, die du brauchst!</p>
-            </div>
-          </div>
+    <div id="app" class="container">
+      <div class="row mt centered">
+        <div class="col-lg-6 col-lg-offset-3">
+          <h1>Die App</h1>
         </div>
-         <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-      <a class="right carousel-control" href="#carousel-example-generic" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-      </div><!-- /col-lg-8 -->
-    </div><!-- /row -->
-    <hr>
-  </div><!--/container -->
+      </div><!-- /row -->
 
-<div class="container">
-    <div class="row mt centered">
-      <div class="col-lg-6 col-lg-offset-3">
-        <h1>Freiheit ist das größte Gut!</h1>
-        <h4>Und genau nach diesem Grundsatz ist auch die App entstanden.</h4>
-      </div>
-    </div><!-- /row -->
+      <div class="row mt centered">
+        <div class="col-lg-4">
+          <p>Wie schon erwähnt ist die App eigentlich eine Webseite, die in jedem Browser aufgerufen werden kann (bspw. <a href="//rawgit.com/HTWK-App/Smartphone-App/master/www/index.html" target="_blank">hier</a>). Je Menüpunkt innerhalb der App existiert eine HTML-Datei, die das DOM und das dazugehörige Script kapselt. Allgemeine Funktionen und Libraries wurden in einzelne Javascript Dateien ausgelagert.</p>
+          <p>Die gesamte Webseite wurde anhand der Vorschläge des Google Pagespeed Plugins optimiert. Trotzdem besteht hier noch einiger Bedarf. Gerade beim Starten der App geht alles recht zäh zu.</p>
+        </div>
 
-    <div class="row mt centered">
-      <div class="col-lg-4">
-	<h4>Würdest du gern mitarbeiten oder deine eigenen Ideen einbringen? Kein Problem! Die App ist <i>Open-Source</i>.</h4><i>Auch wenn du kein Programmierer bist kannst du dich einbringen. Wir suchen immer Leute, die Bilder entwerfen, am Design arbeiten oder Werbung für die App machen.<br>Schreib uns doch einfach eine E-Mail ;-)</i><br>
-        <a href="//github.com/HTWK-App" target="_blank" class="contribute btn btn-warning"><img src="assets/images/icon-github.png" alt="">Deine Idee einbringen</a>
-      </div><!--/col-lg-4 -->
+        <div class="col-lg-4">
+        </div>
 
-      <div class="col-lg-4">
-	<h4>Hast du Vorschläge für <i>neue Funktionen</i>? Schreib uns doch einfach eine E-Mail!</h4><i>Egal ob du dich an einer Funktion störst oder DIE Idee hast, wir werden uns alle Vorschläge genau durchlesen, dir ein Feedback geben und gegebenfalls Fragen stellen.</i><br>
-        <a href="//plus.google.com/communities/107052951239419961060" class="contribute btn btn-warning" target="_blank" ><span class="glyphicon glyphicon-envelope"></span>Verschläge für neue Funktionen</a>
-      </div><!--/col-lg-4 -->
+        <div class="col-lg-4">
+          <p></p>
+        </div>
+      </div><!-- /row -->
+      <hr>
+    </div><!--/container -->
 
-      <div class="col-lg-4">
-	<h4>Sind dir <i>Fehler aufgefallen</i>? Trag sie doch einfach in unserem Bugtracker ein!</h4><i>Denk aber bitte daran das wir nicht hellsehen können ;-) Wir brauchen eine genaue Bescheibung was nicht funktioniert hat und was du erwartet hast. Das am besten auch mit einem Screenshot!</i><br>
-        <a href="//github.com/HTWK-App/Smartphone-App/issues?direction=desc&amp;sort=created&amp;state=open" target="_blank" class="contribute btn btn-warning"><span class="glyphicon glyphicon-exclamation-sign"></span>Einen Bug melden</a>
-      </div><!--/col-lg-4 -->
-    </div><!-- /row -->
-    <hr>
-  </div>  <!--/container -->
+    <div id="opensource" class="container">
+      <div class="row mt centered">
+        <div class="col-lg-6 col-lg-offset-3">
+          <h1>Open-Source schreiben wir groß!</h1>
+          <h4>Und genau nach diesem Grundsatz ist die App auch entstanden</h4>
+        </div>
+      </div><!-- /row -->
 
-  <div class="container">
-    <div class="row mt centered">
-      <div class="col-lg-6 col-lg-offset-3">
-        <h1>Unser aktuelles Team:</h1>
-      </div>
-    </div><!-- /row -->
+      <div class="row mt centered">
+        <div class="col-lg-4">
+          <h4>All unsere Entwicklungen sind bei <i>Github</i> gehostet. Wenn du einfach mal reingucken willst, wissen willst wie wir verschiedene Sachen gelöst haben oder ein paar Auswertungen laufen lassen willst, schau einfach mal vorbei!</h4><i>Auch wenn du kein Programmierer bist kannst du auf Github viel finden. Da gibt es Diagramme, ein Commit-Log, ein Wiki und auch einen Issue-Tracker</i><br>
+          <a href="//github.com/HTWK-App" target="_blank" class="contribute btn btn-warning"><img src="assets/images/icon-github.png" alt="">Auf zu Github</a>
+        </div><!--/col-lg-4 -->
 
-    <div class="row mt centered" id="members">
-      <div class="col-lg-6">
-        <img class="img-circle" src="//avatars.githubusercontent.com/u/1965431?" width="140" alt="">
-        <h4>Henri Knochenhauer</h4>
-        <p>Server-Applikation</p>
-        <p><i><a href="javascript:linkTo_UnCryptMailto('rfnqyt?mpsthmnElrfnq3htr', 5);" class="glyphicon glyphicon-envelope"></a></i> <i><a href="http://www.hknochi.de/about" target="_blank" class="glyphicon glyphicon-globe"></a></i></p>
-      </div><!--/col-lg-4 -->
-      <div class="col-lg-6">
-        <img class="img-circle" src="//avatars.githubusercontent.com/u/855967?" width="140" alt="">
-        <h4>Roy Meissner</h4>
-        <p>Projektleitung und Smartphone-App</p>
-        <p><i><a href="javascript:linkTo_UnCryptMailto('rfnqyt?wt~2rjnxxsjwElr}3sjy', 5);" class="glyphicon glyphicon-envelope"></a></i> <i><a href="https://rmeissn.github.io" target="_blank" class="glyphicon glyphicon-globe"></a></i></p>
-      </div><!--/col-lg-4 -->
-    </div><!-- /row -->
-		<div class="row mt centered">
-      <div class="col-lg-6 col-lg-offset-3">
-        <h2>Wer uns alles unterstützt hat:</h2>
-      </div>
-    </div><!-- /row -->
-    <div class="row mt centered">
-     <div class="col-lg-4">
-        <h4>Matthias Tempel</h4>
-        <i class="retired">Anpassungen für iPhone/iPad</i>
-      </div><!--/col-lg-4 -->
-       <div class="col-lg-4">
-        <h4>Benjamin Westphal</h4>
-        <i class="retired">Design der Icons und der App</i>
-      </div><!--/col-lg-4 -->
-       <div class="col-lg-4">
-        <h4>Hubertus Willuhn</h4>
-        <i class="retired">Programmierung der Smartphone-App<br>Refactoring und Performance-Optimierung</i>
-      </div><!--/col-lg-4 -->
-		</div>
-		<div class="row mt centered">
-			<div class="col-lg-6 col-lg-offset-3">
-        <h4>Sowie jede Menge Betatester!</h4>
-      </div>
-    </div>
-    <hr/>
-  </div><!-- /container -->
+        <div class="col-lg-4">
+          <h4>Hast du Vorschläge für <i>neue Funktionen</i>? Schau dir das Projekt doch einfach mal auf Github an und tritt mit uns in Kontakt. Wir helfen gern und beißen nicht ;)</h4><i>Falls du kein Entwickler sein solltest kannst du uns auch einfach eine E-Mail mit deinen Wünschen oder Berichten schreiben. Wir lesen uns alle Vorschläge genau durch und geben dir Feedback.</i><br>
+          <a href="javascript:linkTo_UnCryptMailto('rfnqyt?wt~2rjnxxsjwElr}3sjy', 5);" class="contribute btn btn-warning"><span class="glyphicon glyphicon-envelope"></span>E-Mail</a>
+        </div><!--/col-lg-4 -->
 
-  <div class="container">
-    <p class="centered">Design by BlackTie.co - Attribution License 3.0 - 2014 , contributed by <a href="http://www.hknochi.de" target="_blank">HKnochi.de</a><br/> Icons by <a href="http://www.pixelkit.com/"  target="_blank">PixelKit</a> - Creative Commons Attribution 3.0 Unported (CC BY 3.0)<br> Uns auf <a href="//plus.google.com/101308405577100871741" rel="publisher"  target="_blank">Google+</a></p>
-  </div><!-- /container -->
+        <div class="col-lg-4">
+          <h4>Sind dir <i>Fehler aufgefallen</i>? Trag sie doch einfach in unserem Bugtracker ein!</h4><i>Denk aber bitte daran das wir nicht Hellsehen können ;-) Wir brauchen eine genaue Bescheibung was nicht funktioniert hat und was du erwartet hast. Das am besten auch mit einem Screenshot!</i><br>
+          <a href="//github.com/HTWK-App/Smartphone-App/issues?direction=desc&amp;sort=created&amp;state=open" target="_blank" class="contribute btn btn-warning"><span class="glyphicon glyphicon-exclamation-sign"></span>Einen Bug melden</a>
+        </div><!--/col-lg-4 -->
+      </div><!-- /row -->
+      <hr>
+    </div>  <!--/container -->
 
+    <div class="container">
+      <div class="row mt centered">
+        <div class="col-lg-6 col-lg-offset-3">
+          <h1>Unser aktuelles Team:</h1>
+        </div>
+      </div><!-- /row -->
+
+      <div class="row mt centered" id="members">
+        <div class="col-lg-6">
+          <img class="img-circle" src="//avatars.githubusercontent.com/u/1965431?" width="140" alt="">
+          <h4>Henri Knochenhauer</h4>
+          <p>Server-Applikation</p>
+          <p><i><a href="javascript:linkTo_UnCryptMailto('rfnqyt?mpsthmnElrfnq3htr', 5);" class="glyphicon glyphicon-envelope"></a></i> <i><a href="http://www.hknochi.de/about" target="_blank" class="glyphicon glyphicon-globe"></a></i></p>
+        </div><!--/col-lg-4 -->
+        <div class="col-lg-6">
+          <img class="img-circle" src="//avatars.githubusercontent.com/u/855967?" width="140" alt="">
+          <h4>Roy Meissner</h4>
+          <p>Projektleitung und Smartphone-App</p>
+          <p><i><a href="javascript:linkTo_UnCryptMailto('rfnqyt?wt~2rjnxxsjwElr}3sjy', 5);" class="glyphicon glyphicon-envelope"></a></i> <i><a href="https://rmeissn.github.io" target="_blank" class="glyphicon glyphicon-globe"></a></i></p>
+        </div><!--/col-lg-4 -->
+      </div><!-- /row -->
+    </div><!-- /container -->
+
+    <div class="container">
+      <p class="centered">Design by BlackTie.co - Attribution License 3.0 - 2014 , contributed by <a href="http://www.hknochi.de" target="_blank">HKnochi.de</a><br/> Icons by <a href="http://www.pixelkit.com/"  target="_blank">PixelKit</a> - Creative Commons Attribution 3.0 Unported (CC BY 3.0)<br> Uns auf <a href="//plus.google.com/101308405577100871741" rel="publisher"  target="_blank">Google+</a></p>
+    </div><!-- /container -->
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -239,28 +206,19 @@
     <script type="text/javascript" src="assets/javascript/prettify.js"></script>
     <script type="text/javascript" >
 
-      function checkBeforeSubmit(){
-        document.getElementById('contact').submit();
-        //document.getElementById('success').innerHTML='Submitted';
-      }
-
-      $("div#presentation div.overlay").one("click", function(){
-        $('div#presentation').append('<iframe src="http://rawgit.com/HTWK-App/Smartphone-App/master/www/index.html" id="presentation"></iframe>');
-          $(this).toggle();
-
-      });
       function UnCryptMailto(s, shift) {
-        var n=0
+        var n=0;
         var r="";
-        for(var i=0;i<s.length;i++) {
-          n=s.charCodeAt(i);
-          if (n>=8364) {n = 128;}
+        for(var i = 0; i < s.length; i++) {
+          n = s.charCodeAt(i);
+          if (n>=8364) n = 128;
           r += String.fromCharCode(n-(shift));
         }
         return r;
       }
+
       function linkTo_UnCryptMailto(s, shift) {
-        location.href=UnCryptMailto(s, shift);
+        location.href = UnCryptMailto(s, shift);
       }
 
     </script>
