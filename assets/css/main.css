@@ -40,7 +40,7 @@ div.overlay div.txt{
 }
 
 div#presentation{
-    background-image: url(../img/top2.png);
+    background-image: url(../images/top2.png);
     width:540px;
     height:640px;
 }
@@ -55,7 +55,7 @@ iframe#presentation{
 }
 
 div#presentation-mobile{
-    background-image: url(../img/top.png);
+    background-image: url(../images/top.png);
     width:422px;
     height:500px;
 }
@@ -207,7 +207,7 @@ a:after {
 
 i {
 	margin: 8px;
-	color: #3498db; 
+	color: #3498db;
 }
 
 
@@ -221,7 +221,7 @@ i {
 	background-position: center center;
 	min-height: 650px;
 	width: 100%;
-	
+
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -243,7 +243,7 @@ i {
 }
 
 .carousel-control{
-    background-image: none!important; 
+    background-image: none!important;
     margin-bottom: 170px;
 }
 
@@ -253,7 +253,7 @@ i {
 
 @media screen and (max-width: 768px) {
   .carousel-control{
-    background-image: none!important; 
+    background-image: none !important;
     margin-bottom: 160px;
   }
 

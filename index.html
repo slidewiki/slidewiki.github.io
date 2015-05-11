@@ -11,22 +11,43 @@
 
     <title>HTWK-App</title>
 
-    <!-- Bootstrap core CSS -->
+    <!-- Bootstrap + FontAwesome -->
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/prettify.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/gh-fork-ribbon.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
     <!-- Fonts from Google Fonts -->
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato:300,400,900" />
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
 
   </head>
+
+  <style>
+    a.btn {
+      font-size: 130%;
+      margin: 7px;
+    }
+
+    a.btn i {
+      color: white;
+    }
+
+    #googleplay {
+      padding: 0 0 40px 0;
+    }
+
+
+    @media (min-width: 1200px) {
+      #btn-1 {
+        margin-top: 30px;
+      }
+
+      #btn-2 {
+        margin-top: 50px;
+      }
+    }
+  </style>
+
 <!-- NAVBAR
 ================================================== -->
  <body>
@@ -34,24 +55,34 @@
     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
 
     <!-- Fixed navbar -->
-    <div class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>-->
-          <a class="navbar-brand" href="#"><b>HTWK-APP</b></a>
-        </div>
-        <!--<div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><div class="gps_ring"></div></li>
-          </ul>
-
-        </div>-->
-      </div>
-    </div>
+		<div class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand page-scroll" href="#headerwrap"><b>HTWK-APP</b></a>
+				</div>
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a class="page-scroll" href="#overview">Übersicht</a>
+						</li>
+            <li>
+							<a class="page-scroll" href="#planning">In Planung</a>
+						</li>
+            <li>
+							<a class="page-scroll" href="#contact">Links</a>
+						</li>
+            <li>
+							<a class="page-scroll" href="#team">Team</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 
   <div id="headerwrap">
     <div class="container">
@@ -69,8 +100,11 @@
           <br><br>
           <div class="text-center">
           	<a href="//play.google.com/store/apps/details?id=com.HTWK_App.App" target="_blank">
-							<img alt="Get it on Google Play" src="assets/images/play_store.png" style="padding: 0 0 40px 0;"/>
+							<img alt="Get it on Google Play" src="assets/images/play_store.png" id="googleplay"/>
 						</a>
+            <a href="https://htwk-app.imn.htwk-leipzig.de/app" target="_blank" class="btn btn-success" role="button" style="margin: 0; margin-left: 10px; margin-bottom: 38px; font-size: 170%;">
+              Im Browser öffnen<i class="fa fa-fw fa-external-link"></i>
+            </a>
           </div>
         </div><!-- /col-lg-6 -->
         <div class="col-lg-6 visible-md visible-lg white " id="presentation">
@@ -88,7 +122,7 @@
   </div><!-- /headerwrap -->
 
 
-  <div class="container">
+  <div class="container" id="overview">
     <div class="row mt centered">
       <div class="col-lg-6 col-lg-offset-3">
         <h1>Den Studienalltag im Blick<br/>und das mit modernem Design</h1>
@@ -98,13 +132,13 @@
 
     <div class="row mt centered">
       <div class="col-lg-4">
-        <img src="assets/img/news.png" width="130" alt="">
+        <img src="assets/images/Icons/news.png" width="130" alt="">
         <h4>News</h4><hr>
 	  <p>Aktuelle News der HTWK und der Region Leipzig</p>
       </div><!--/col-lg-4 -->
 
       <div class="col-lg-4">
-        <img src="assets/img/info.png" width="130" alt="">
+        <img src="assets/images/Icons/info.png" width="130" alt="">
         <h4>Informationen</h4><hr>
         <p>Speiseplan deiner Lieblingsmensa</p>
         <p>Sportkurse und deren Infos</p>
@@ -115,7 +149,7 @@
       </div><!--/col-lg-4 -->
 
       <div class="col-lg-4">
-        <img src="assets/img/students.png" width="130" alt="">
+        <img src="assets/images/Icons/students.png" width="130" alt="">
         <h4>Studentenalltag</h4><hr>
         <p>Dein persönlicher Stundenplan</p>
         <p>Übersicht über deine Noten</p>
@@ -128,7 +162,7 @@
   </div><!-- /container -->
 
 
-  <div class="container">
+  <div class="container" id="planning">
     <div class="row mt centered">
       <div class="col-lg-6 col-lg-offset-3">
         <h1>Was ist derzeit in Planung?</h1>
@@ -148,11 +182,11 @@
           <!-- Wrapper for slides -->
           <div class="carousel-inner">
             <div class="item active">
-              <img src="assets/img/p01.png" alt="">
+              <img src="assets/images/p01.png" alt="">
 	      			<p>Derzeit gibt es noch einige kleinere Bugs in der App. Diese werden wir mit Nachdruck ausmerzen, damit die App auf so vielen Geräten wie möglich fehlerfrei funktioniert.</p>
             </div>
             <div class="item">
-              <img src="assets/img/p03.png" alt="">
+              <img src="assets/images/p03.png" alt="">
 				      <p>Querverweise innerhalb der App werden demnächst kein Problem mehr sein. Damit findest du noch schneller die Informationen, die du brauchst!</p>
             </div>
           </div>
@@ -164,7 +198,7 @@
     <hr />
   </div><!--/container -->
 
-<div class="container">
+<div class="container" id="contact">
     <div class="row mt centered">
       <div class="col-lg-6 col-lg-offset-3">
         <h1>Freiheit ist das größte Gut!</h1>
@@ -175,23 +209,23 @@
     <div class="row mt centered">
       <div class="col-lg-4">
 	<h4>Würdest du gern mitarbeiten oder deine eigenen Ideen einbringen? Kein Problem! Die App ist <i>Open-Source</i>.</h4><i>Auch wenn du kein Programmierer bist kannst du dich einbringen. Wir suchen immer Personen, die Bilder entwerfen, am Design arbeiten oder Werbung für die App machen.<br>Schreib uns dazu doch einfach eine E-Mail ;-)</i><br>
-        <a href="//github.com/HTWK-App" target="_blank" class="contribute btn btn-warning"><img src="assets/images/icon-github.png" alt="">Auf zu Github</a>
+        <a href="//github.com/HTWK-App" target="_blank" class="btn btn-warning" role="button"><i class="fa fa-fw fa-lg fa-github"></i>Auf zu Github</a>
       </div><!--/col-lg-4 -->
 
       <div class="col-lg-4">
 	<h4>Hast du Vorschläge für <i>neue Funktionen</i>? Schreib uns doch einfach eine E-Mail!</h4><i>Egal ob du dich an einer Funktion störst oder DIE Idee hast, wir werden uns alle Vorschläge genau durchlesen, dir Feedback geben und gegebenfalls Fragen stellen.</i><br>
-        <a href="javascript:linkTo_UnCryptMailto('rfnqyt?wt~2rjnxxsjwElr}3sjy', 5);" class="contribute btn btn-warning"><span class="glyphicon glyphicon-envelope"></span>E-Mail an unser Team</a>
+        <a href="javascript:linkTo_UnCryptMailto('rfnqyt?wt~2rjnxxsjwElr}3sjy', 5);" target="_blank" class="btn btn-warning" id="btn-1" role="button"><i class="fa fa-fw fa-lg fa-envelope"></i>E-Mail an uns</a>
       </div><!--/col-lg-4 -->
 
       <div class="col-lg-4">
 	<h4>Sind dir <i>Fehler aufgefallen</i>? Trag sie doch einfach in unserem Bugtracker ein!</h4><i>Denk aber bitte daran, dass wir nicht hellsehen können ;-) Wir brauchen eine genaue Bescheibung was nicht funktioniert hat und was du erwartet hast. Das am besten auch mit einem Screenshot!</i><br>
-        <a href="//github.com/HTWK-App/Smartphone-App/issues?direction=desc&amp;sort=created&amp;state=open" target="_blank" class="contribute btn btn-warning"><span class="glyphicon glyphicon-exclamation-sign"></span>Einen Bug melden</a>
+        <a href="https://github.com/HTWK-App/Smartphone-App/issues/new" target="_blank" class="btn btn-warning" id="btn-2" role="button"><i class="fa fa-fw fa-lg fa-bug"></i>Bug melden</a>
       </div><!--/col-lg-4 -->
     </div><!-- /row -->
     <hr>
   </div>  <!--/container -->
 
-  <div class="container">
+  <div class="container" id="team">
     <div class="row mt centered">
       <div class="col-lg-6 col-lg-offset-3">
         <h1>Unser aktuelles Team:</h1>
@@ -204,7 +238,7 @@
         <h4>Henri Knochenhauer</h4>
         <p>Java Server-Applikation<br>
            Server-Betrieb</p>
-        <p><i><a href="javascript:linkTo_UnCryptMailto('rfnqyt?mpsthmnElrfnq3htr', 5);" class="glyphicon glyphicon-envelope"></a></i> <i><a href="http://www.hknochi.de/about" target="_blank" class="glyphicon glyphicon-globe"></a></i></p>
+        <p><i><a href="javascript:linkTo_UnCryptMailto('rfnqyt?mpsthmnElrfnq3htr', 5);"><i class="fa fa-lg fa-envelope"></i></a></i> <i><a href="http://www.hknochi.de/about" target="_blank"><i class="fa fa-lg fa-globe"></i></a></i></p>
       </div><!--/col-lg-4 -->
       <div class="col-lg-6">
         <img class="img-circle" src="//avatars.githubusercontent.com/u/855967?" width="140" alt="">
@@ -213,7 +247,7 @@
            Smartphone-App<br>
            Scala-Microservices<br>
            Server-Betrieb</p>
-        <p><i><a href="javascript:linkTo_UnCryptMailto('rfnqyt?wt~2rjnxxsjwElr}3sjy', 5);" class="glyphicon glyphicon-envelope"></a></i> <i><a href="//rmeissn.github.io" target="_blank" class="glyphicon glyphicon-globe"></a></i></p>
+        <p><i><a href="javascript:linkTo_UnCryptMailto('rfnqyt?wt~2rjnxxsjwElr}3sjy', 5);"><i class="fa fa-lg fa-envelope"></i></a></i> <i><a href="//rmeissn.github.io" target="_blank"><i class="fa fa-lg fa-globe"></i></a></i></p>
       </div><!--/col-lg-4 -->
     </div><!-- /row -->
 		<div class="row mt centered">
@@ -252,9 +286,10 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="application/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
    	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="assets/js/docs.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/docs.min.js"></script>
     <script type="text/javascript" src="assets/javascript/prettify.js"></script>
     <script type="text/javascript">
 
@@ -263,7 +298,7 @@
           $(this).toggle();
 
       });
-      
+
 			function UnCryptMailto(s, shift) {
         var n=0;
         var r="";
@@ -278,6 +313,20 @@
       function linkTo_UnCryptMailto(s, shift) {
         location.href = UnCryptMailto(s, shift);
       }
+
+      // jQuery for page scrolling feature - requires jQuery Easing plugin
+      $('a.page-scroll').bind('click', function(event) {
+          var $anchor = $(this);
+          $('html, body').stop().animate({
+              scrollTop: $($anchor.attr('href')).offset().top
+          }, 1500, 'easeInOutExpo');
+          event.preventDefault();
+      });
+
+      // Closes the Responsive Menu on Menu Item Click
+      $('.navbar-collapse ul li a').click(function() {
+          $('.navbar-toggle:visible').click();
+      });
 		</script>
 	</body>
 </html>
