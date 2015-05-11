@@ -13,53 +13,38 @@
 
     <title>HTWK-App - Entwickler</title>
 
-    <!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <!-- FontAwesome -->
+    <!-- Bootstrap + FontAwesome -->
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-
-		<!-- Custom CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/css/prettify.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/gh-fork-ribbon.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
 
     <!-- Fonts from Google Fonts -->
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato:300,400,900" />
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
 	</head>
+
   <style>
-
-    .social-button {
-      margin-left: 45%;
-      margin-top: 10px;
-    }
-    .social-button a{
-      display: block;
-      width: 50px;
-      height: 50px;
-      border-radius: 100%;
-      background-color: #3498db;
-      -webkit-transition: all .3s;
-      -moz-transition: all .3s;
-      transition: all .3s;
+    a.btn {
+      font-size: 130%;
+      margin: 7px;
     }
 
-    .social-button i{
-      color: #fec503;
+    a.btn i {
+      color: white;
     }
 
-    .social-button a:hover,
-    .social-button a:focus,
-    .social-button a:active {
-        background-color: #1376b9;
+    @media (min-width: 1200px) {
+
+      #btn-2 {
+        margin-top: 53px;
+      }
+
+      iframe {
+        margin-top: 20px;
+      }
     }
   </style>
+
 	<body>
 
 		<!-- Fixed navbar -->
@@ -105,16 +90,16 @@
 						<br><br>
 					</div><!-- /col-lg-6 -->
           <div class="col-lg-6">
-            <iframe frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" width="100%" height="400" src="https://prezi.com/embed/xq7xvvbtiikq/?bgcolor=ffffff&amp;lock_to_path=0&amp;autoplay=0&amp;autohide_ctrls=0#"></iframe>
+            <iframe frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" width="100%" height="430" src="https://prezi.com/embed/xq7xvvbtiikq/?bgcolor=ffffff&amp;lock_to_path=0&amp;autoplay=0&amp;autohide_ctrls=0#"></iframe>
           </div>
 				</div><!-- /row -->
 			</div><!-- /container -->
 		</div><!-- /headerwrap -->
 
 
-		<div class="container">
+		<div id="cs" class="container">
 
-			<div id="cs" class="row mt centered">
+			<div class="row mt centered">
 				<div class="col-lg-6 col-lg-offset-3">
 					<h1>Client-Server Architektur</h1>
 					<h3>Die HTWK-App setzt auf die altbekannte Client-Server Architektur. Die App ist der Server und der Server der Client....äh, natürlich andersherum ;)</h3>
@@ -124,20 +109,20 @@
       <div class="row mt centered">
 
 				<div class="col-lg-4">
-					<img src="assets/img/website.png" width="128" height="128" alt="">
+					<img src="assets/images/Icons/website.png" width="128" height="128" alt="">
 					<h4>Webseite</h4><hr>
 					<p>Die App wurde als Webseite entworfen und setzt damit auf HTML, CSS und Javascript. Damit können wir den Studenten und Mitarbeitern der HTWK eine moderne Oberfläche präsentieren, die leicht umgebaut werden kann.</p>
           <p> Wir benutzten <a href="//jquery.com/" target="_blank">JQuery</a> und Javascript für die Logik, <a href="//jquerymobile.com/" target="_blank">JQueryMobile</a> für die UI und <a href="//fortawesome.github.io/Font-Awesome/" target="_blank">FontAwesome</a> für Icons. Daten, die die App anzeigt, werden immer brandneu und unter Nutzung neuster Technologien vom Server bezogen.</p>
 				</div><!--/col-lg-4 -->
 
 				<div class="col-lg-4">
-					<img src="assets/img/server.png" width="128" height="128" alt="">
+					<img src="assets/images/Icons/server.png" width="128" height="128" alt="">
 					<h4>Server</h4><hr>
 					<p>Die Server-Anwendung besteht aus mehreren <a href="//en.wikipedia.org/wiki/Microservices" target="_blank">Microservices</a>, die vornehmlich in Java und Scala geschrieben sind. Unter Java wird das <a href="//projects.spring.io/spring-framework/" target="_blank">Spring-Framework</a>, unter Scala das <a href="//www.playframework.com" target="_blank">Play-Framework</a> benutzt. Der Server bieten eine HTTP-Rest Schnittstelle an, von der JSON formatierte Daten bezogen werden können.</p>
 				</div><!--/col-lg-4 -->
 
 				<div class="col-lg-4">
-					<img src="assets/img/app.png" width="128" height="128" alt="">
+					<img src="assets/images/Icons/app.png" width="128" height="128" alt="">
 					<h3>App</h3>
 					<hr>
 					<p>Das Framework <a href="//cordova.apache.org" target="_blank">Apache Cordova</a> transformiert die Webseite in eine App, die in alle gängigen App-Stores gestellt werden kann. Für den Googles Play-Store haben wir das schon gemacht, für alle anderen suchen wir noch Möglichkeiten...(ganz ehrlich Apple...100$ pro Jahr für ein Non-Profit Projekt?!).</p>
@@ -183,17 +168,17 @@
       <div class="row mt centered">
         <div class="col-lg-4">
           <h4>All unsere Entwicklungen sind bei <i>Github</i> gehostet. Wenn du einfach mal reingucken willst, wissen willst wie wir verschiedene Sachen gelöst haben oder ein paar Auswertungen laufen lassen willst, schau einfach mal vorbei!</h4><i>Auch wenn du kein Programmierer bist kannst du auf Github viel finden. Da gibt es Diagramme, ein Commit-Log, ein Wiki und auch einen Issue-Tracker</i><br>
-          <div class="social-button"><a href="//github.com/HTWK-App" target="_blank"><i class="fa fa-fw fa-2x fa-github"></i></a></div>
+          <a href="//github.com/HTWK-App" target="_blank" class="btn btn-warning" role="button"><i class="fa fa-fw fa-lg fa-github"></i>Auf zu Github</a>
         </div><!--/col-lg-4 -->
 
         <div class="col-lg-4">
           <h4>Hast du Vorschläge für <i>neue Funktionen</i>? Schau dir das Projekt doch einfach mal auf Github an und tritt mit uns in Kontakt. Wir helfen gern und keine Angst: wir beißen nicht ;)</h4><i>Falls du kein Entwickler sein solltest kannst du uns auch einfach eine E-Mail mit deinen Wünschen oder Berichten schreiben. Wir lesen uns alle Vorschläge genau durch und geben dir Feedback.</i><br>
-          <div class="social-button"><a href="javascript:linkTo_UnCryptMailto('rfnqyt?wt~2rjnxxsjwElr}3sjy', 5);"><i class="fa fa-fw fa-2x fa-envelope"></i></a></div>
+          <a href="javascript:linkTo_UnCryptMailto('rfnqyt?wt~2rjnxxsjwElr}3sjy', 5);" target="_blank" class="btn btn-warning" id="btn-1" role="button"><i class="fa fa-fw fa-lg fa-envelope"></i>E-Mail an uns</a>
         </div><!--/col-lg-4 -->
 
         <div class="col-lg-4">
           <h4>Sind dir <i>Fehler aufgefallen</i>? Klasse! Trag sie doch einfach in unserem Bugtracker ein!</h4><i>Denk aber bitte daran das wir nicht Hellsehen können ;-) Wir brauchen eine genaue Bescheibung was nicht funktioniert hat und was du erwartet hast. Das am besten auch mit einem Screenshot!</i><br>
-          <div class="social-button"><a href="//github.com/HTWK-App/Smartphone-App/issues?direction=desc&amp;sort=created&amp;state=open"><i class="fa fa-fw fa-2x fa-bug"></i></a></div>
+          <a href="https://github.com/HTWK-App/Smartphone-App/issues/new" target="_blank" class="btn btn-warning" id="btn-2" role="button"><i class="fa fa-fw fa-lg fa-bug"></i>Bug melden</a>
         </div><!--/col-lg-4 -->
       </div><!-- /row -->
       <hr>
@@ -211,17 +196,17 @@
           <img class="img-circle" src="//avatars.githubusercontent.com/u/1965431?" width="140" alt="">
           <h4>Henri Knochenhauer</h4>
           <p>Java Server-Applikation<br>
-            Server-Betrieb</p>
-          <p><i><a href="javascript:linkTo_UnCryptMailto('rfnqyt?mpsthmnElrfnq3htr', 5);" class="glyphicon glyphicon-envelope"></a></i> <i><a href="http://www.hknochi.de/about" target="_blank" class="glyphicon glyphicon-globe"></a></i></p>
+             Server-Betrieb</p>
+          <p><i><a href="javascript:linkTo_UnCryptMailto('rfnqyt?mpsthmnElrfnq3htr', 5);"><i class="fa fa-lg fa-envelope"></i></a></i> <i><a href="http://www.hknochi.de/about" target="_blank"><i class="fa fa-lg fa-globe"></i></a></i></p>
         </div><!--/col-lg-4 -->
         <div class="col-lg-6">
           <img class="img-circle" src="//avatars.githubusercontent.com/u/855967?" width="140" alt="">
           <h4>Roy Meissner</h4>
-            <p>Projektleitung<br>
-              Smartphone-App<br>
-              Scala-Microservices<br>
-              Server-Betrieb</p>
-          <p><i><a href="javascript:linkTo_UnCryptMailto('rfnqyt?wt~2rjnxxsjwElr}3sjy', 5);" class="glyphicon glyphicon-envelope"></a></i> <i><a href="https://rmeissn.github.io" target="_blank" class="glyphicon glyphicon-globe"></a></i></p>
+          <p>Projektleitung<br>
+             Smartphone-App<br>
+             Scala-Microservices<br>
+             Server-Betrieb</p>
+          <p><i><a href="javascript:linkTo_UnCryptMailto('rfnqyt?wt~2rjnxxsjwElr}3sjy', 5);"><i class="fa fa-lg fa-envelope"></i></a></i> <i><a href="//rmeissn.github.io" target="_blank"><i class="fa fa-lg fa-globe"></i></a></i></p>
         </div><!--/col-lg-4 -->
       </div><!-- /row -->
       <hr>
@@ -236,13 +221,14 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="application/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
    	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="assets/js/docs.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/docs.min.js"></script>
     <script type="text/javascript" src="assets/javascript/prettify.js"></script>
-    <script type="text/javascript" >
+    <script type="text/javascript">
 
-      function UnCryptMailto(s, shift) {
+			function UnCryptMailto(s, shift) {
         var n=0;
         var r="";
         for(var i = 0; i < s.length; i++) {
@@ -257,6 +243,19 @@
         location.href = UnCryptMailto(s, shift);
       }
 
-    </script>
+      // jQuery for page scrolling feature - requires jQuery Easing plugin
+      $('a.page-scroll').bind('click', function(event) {
+          var $anchor = $(this);
+          $('html, body').stop().animate({
+              scrollTop: $($anchor.attr('href')).offset().top
+          }, 1500, 'easeInOutExpo');
+          event.preventDefault();
+      });
+
+      // Closes the Responsive Menu on Menu Item Click
+      $('.navbar-collapse ul li a').click(function() {
+          $('.navbar-toggle:visible').click();
+      });
+		</script>
   </body>
 </html>
