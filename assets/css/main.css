@@ -40,7 +40,7 @@ div.overlay div.txt{
 }
 
 div#presentation{
-    background-image: url(../images/top2.png);
+    background-image: url(../images/app/top2.png);
     width:540px;
     height:640px;
 }
@@ -55,7 +55,7 @@ iframe#presentation{
 }
 
 div#presentation-mobile{
-    background-image: url(../images/top.png);
+    background-image: url(../images/app/top.png);
     width:422px;
     height:500px;
 }
