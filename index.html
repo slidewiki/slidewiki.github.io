@@ -1,169 +1,187 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
- 		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Homepage of the HTWK-App">
-    <meta name="author" content="Roy Meissner">
 
-    <link rel="shortcut icon" href="assets/images/Icons/news.png">
-    <meta name="google-site-verification" content="dacvyXPj86SyrsSxOI68z2Inbu1Zw4NinkiKZKaOnUE">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Homepage of the HTWK-App">
+  <meta name="author" content="Roy Meissner">
 
-    <title>HTWK-App</title>
+  <link rel="shortcut icon" href="assets/images/Icons/news.png">
+  <meta name="google-site-verification" content="dacvyXPj86SyrsSxOI68z2Inbu1Zw4NinkiKZKaOnUE">
 
-    <!-- Bootstrap + FontAwesome -->
-		<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
-    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" defer>
+  <title>HTWK-App</title>
 
-    <!-- Fonts from Google Fonts -->
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato:300,400,900" defer>
+  <!-- Bootstrap + FontAwesome -->
+  <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+  <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" defer>
 
-  </head>
+  <!-- Fonts from Google Fonts -->
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato:300,400,900" defer>
 
-  <style>
-    a.btn {
-      font-size: 130%;
-      margin: 7px;
+</head>
+
+<style>
+  a.btn {
+    font-size: 130%;
+    margin: 7px;
+  }
+
+  a.btn i {
+    color: white;
+  }
+
+  #googleplay {
+    padding: 0 0 40px 0;
+  }
+
+  @media (min-width: 1200px) {
+    #btn-1 {
+      margin-top: 30px;
     }
-
-    a.btn i {
-      color: white;
+    #btn-2 {
+      margin-top: 50px;
     }
+  }
+</style>
 
-    #googleplay {
-      padding: 0 0 40px 0;
-    }
+<body>
 
+  <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
 
-    @media (min-width: 1200px) {
-      #btn-1 {
-        margin-top: 30px;
-      }
-
-      #btn-2 {
-        margin-top: 50px;
-      }
-    }
-  </style>
-
-<!-- NAVBAR
-================================================== -->
- <body>
-
-    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
-
-    <!-- Fixed navbar -->
-		<div class="navbar navbar-default navbar-fixed-top">
-			<div class="container">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand page-scroll" href="#headerwrap"><b>HTWK-APP</b></a>
-				</div>
-				<div class="navbar-collapse collapse">
-					<ul class="nav navbar-nav navbar-right">
-						<li>
-							<a class="page-scroll" href="#overview">Übersicht</a>
-						</li>
-            <li>
-							<a class="page-scroll" href="#planning">In Planung</a>
-						</li>
-            <li>
-							<a class="page-scroll" href="#contact">Links</a>
-						</li>
-            <li>
-							<a class="page-scroll" href="#team">Team</a>
-						</li>
-            <li>
-							<a class="page-scroll" href="devs.html">Für Entwickler</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
+  <!-- Fixed navbar -->
+  <div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand page-scroll" href="#headerwrap"><b>HTWK-APP</b></a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a class="page-scroll" href="#overview">Übersicht</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#planning">In Planung</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#contact">Links</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#team">Team</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="devs.html">Für Entwickler</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
   <div id="headerwrap">
     <div class="container">
       <div class="row">
         <div class="col-lg-6">
-          <h1>Die Hochschule jeden Tag in der Tasche</h1><br>
+          <h1>Die Hochschule jeden Tag in der Tasche</h1>
+          <br>
           <ul class="listing">
             <li>Keine Lust jeden Tag gefühlte tausend mal nach deinen Noten zu schauen?</li>
             <li>Schon mal nicht gewusst wo das Gebäude steht, in dem du gleich Unterricht hast?</li>
             <li>Gibt es eigentlich deinen Lieblingssportkurs an der HTWK?</li>
-          </ul><br>
+          </ul>
+          <br>
           <h4 style="color:white">
             Wenn dir diese Fragen bekannt vorkommen, dann solltest du eindeutig einen Blick auf die neue HTWK-App werfen!
           </h4>
-          <br><br>
+          <br>
+          <br>
           <div class="text-center">
-          	<a href="//play.google.com/store/apps/details?id=com.HTWK_App.App" target="_blank">
-							<img alt="Get it on Google Play" src="assets/images/play_store.png" id="googleplay"/>
-						</a>
+            <a href="//play.google.com/store/apps/details?id=com.HTWK_App.App" target="_blank">
+              <img alt="Get it on Google Play" src="assets/images/play_store.png" id="googleplay" />
+            </a>
             <a href="https://htwk-app.imn.htwk-leipzig.de/app" target="_blank" class="btn btn-success" role="button" style="margin: 0; margin-left: 10px; margin-bottom: 39px; font-size: 170%;">
               Im Browser öffnen<i class="fa fa-fw fa-external-link"></i>
             </a>
             <button type="button" data-toggle="modal" data-target="#noApp" class="btn btn-warning" style="margin-bottom: 7px;">Kein Anroid? Hier zur Alternative...</button>
           </div>
-        </div><!-- /col-lg-6 -->
+        </div>
+        <!-- /col-lg-6 -->
         <div class="col-lg-6 visible-md visible-lg white " id="presentation">
-	         <a href="#">
+          <a href="#">
             <div class="overlay">
-              <div class="txt center-block">Willst du die HTWK-App mal ausprobieren?<br><br> Einfach auf das Tablet klicken ;)</div>
+              <div class="txt center-block">Willst du die HTWK-App mal ausprobieren?
+                <br>
+                <br> Einfach auf das Tablet klicken ;)</div>
             </div>
-	        </a>
-        </div><!-- /col-lg-6 -->
+          </a>
+        </div>
+        <!-- /col-lg-6 -->
         <div class="col-lg-6 visible-xs visible-sm white" id="presentation-mobile">
-        </div><!-- /col-lg-6 -->
+        </div>
+        <!-- /col-lg-6 -->
 
-      </div><!-- /row -->
-    </div><!-- /container -->
-  </div><!-- /headerwrap -->
+      </div>
+      <!-- /row -->
+    </div>
+    <!-- /container -->
+  </div>
+  <!-- /headerwrap -->
 
 
   <div class="container" id="overview">
     <div class="row mt centered">
       <div class="col-lg-6 col-lg-offset-3">
-        <h1>Den Studienalltag im Blick<br/>und das mit modernem Design</h1>
+        <h1>Den Studienalltag im Blick
+          <br/>und das mit modernem Design</h1>
         <h3>Dabei wird vor allem auf Aktualität und Sicherheit geachtet: Alles was du siehst wird speziell für dich zusammengestellt und dabei durch modernste Technik gesichert.</h3>
       </div>
-    </div><!-- /row -->
+    </div>
+    <!-- /row -->
 
     <div class="row mt centered">
       <div class="col-lg-4">
         <img src="assets/images/Icons/news.png" width="130" alt="">
-        <h4>News</h4><hr>
-	  <p>Aktuelle News der HTWK und der Region Leipzig</p>
-      </div><!--/col-lg-4 -->
+        <h4>News</h4>
+        <hr>
+        <p>Aktuelle News der HTWK und der Region Leipzig</p>
+      </div>
+      <!--/col-lg-4 -->
 
       <div class="col-lg-4">
         <img src="assets/images/Icons/info.png" width="130" alt="">
-        <h4>Informationen</h4><hr>
+        <h4>Informationen</h4>
+        <hr>
         <p>Speiseplan deiner Lieblingsmensa</p>
         <p>Sportkurse und deren Infos</p>
         <p>Mitarbeiter- und Dozentenverzeichnis</p>
         <p>Gebäude-Infos und Navigation</p>
         <p>Wichtige Verweise, die man immer mal braucht</p>
         <p>Einrichtung des WLans</p>
-      </div><!--/col-lg-4 -->
+      </div>
+      <!--/col-lg-4 -->
 
       <div class="col-lg-4">
         <img src="assets/images/Icons/students.png" width="130" alt="">
-        <h4>Studentenalltag</h4><hr>
+        <h4>Studentenalltag</h4>
+        <hr>
         <p>Dein persönlicher Stundenplan</p>
         <p>Übersicht über deine Noten</p>
         <p>Abfrage deiner HTWK-Mails</p>
         <p>Suche nach einem leerem Seminarraum</p>
-      </div><!--/col-lg-4 -->
-    </div><!-- /row -->
+      </div>
+      <!--/col-lg-4 -->
+    </div>
+    <!-- /row -->
 
     <hr />
-  </div><!-- /container -->
+  </div>
+  <!-- /container -->
 
 
   <div class="container" id="planning">
@@ -171,7 +189,8 @@
       <div class="col-lg-6 col-lg-offset-3">
         <h1>Was ist derzeit in Planung?</h1>
       </div>
-    </div><!-- /row -->
+    </div>
+    <!-- /row -->
 
     <!-- CAROUSEL -->
     <div class="row mt centered">
@@ -187,181 +206,219 @@
           <div class="carousel-inner">
             <div class="item active">
               <img src="assets/images/app/p01.png" alt="">
-	      			<p>Derzeit gibt es noch einige kleinere Bugs in der App. Diese werden wir mit Nachdruck ausmerzen, damit die App auf so vielen Geräten wie möglich fehlerfrei funktioniert.</p>
+              <p>Derzeit gibt es noch einige kleinere Bugs in der App. Diese werden wir mit Nachdruck ausmerzen, damit die App auf so vielen Geräten wie möglich fehlerfrei funktioniert.</p>
             </div>
             <div class="item">
               <img src="assets/images/app/p03.png" alt="">
-				      <p>Querverweise innerhalb der App werden demnächst kein Problem mehr sein. Damit findest du noch schneller die Informationen, die du brauchst!</p>
+              <p>Querverweise innerhalb der App werden demnächst kein Problem mehr sein. Damit findest du noch schneller die Informationen, die du brauchst!</p>
             </div>
           </div>
         </div>
-         <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-      <a class="right carousel-control" href="#carousel-example-generic" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-      </div><!-- /col-lg-8 -->
-    </div><!-- /row -->
+        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+      </div>
+      <!-- /col-lg-8 -->
+    </div>
+    <!-- /row -->
     <hr />
-  </div><!--/container -->
+  </div>
+  <!--/container -->
 
-<div class="container" id="contact">
+  <div class="container" id="contact">
     <div class="row mt centered">
       <div class="col-lg-6 col-lg-offset-3">
         <h1>Freiheit ist das größte Gut!</h1>
         <h4>Und genau nach diesem Grundsatz ist auch die App entstanden</h4>
       </div>
-    </div><!-- /row -->
+    </div>
+    <!-- /row -->
 
     <div class="row mt centered">
       <div class="col-lg-4">
-	<h4>Würdest du gern mitarbeiten oder deine eigenen Ideen einbringen? Kein Problem! Die App ist <i>Open-Source</i>.</h4><i>Auch wenn du kein Programmierer bist kannst du dich einbringen. Wir suchen immer Personen, die Bilder entwerfen, am Design arbeiten oder Werbung für die App machen.<br>Schreib uns dazu doch einfach eine E-Mail ;-)</i><br>
+        <h4>Würdest du gern mitarbeiten oder deine eigenen Ideen einbringen? Kein Problem! Die App ist <i>Open-Source</i>.</h4><i>Auch wenn du kein Programmierer bist kannst du dich einbringen. Wir suchen immer Personen, die Bilder entwerfen, am Design arbeiten oder Werbung für die App machen.<br>Schreib uns dazu doch einfach eine E-Mail ;-)</i>
+        <br>
         <a href="//github.com/HTWK-App" target="_blank" class="btn btn-warning" role="button"><i class="fa fa-fw fa-lg fa-github"></i>Auf zu Github</a>
-      </div><!--/col-lg-4 -->
+      </div>
+      <!--/col-lg-4 -->
 
       <div class="col-lg-4">
-	<h4>Hast du Vorschläge für <i>neue Funktionen</i>? Schreib uns doch einfach eine E-Mail!</h4><i>Egal ob du dich an einer Funktion störst oder DIE Idee hast, wir werden uns alle Vorschläge genau durchlesen, dir Feedback geben und gegebenfalls Fragen stellen.</i><br>
+        <h4>Hast du Vorschläge für <i>neue Funktionen</i>? Schreib uns doch einfach eine E-Mail!</h4><i>Egal ob du dich an einer Funktion störst oder DIE Idee hast, wir werden uns alle Vorschläge genau durchlesen, dir Feedback geben und gegebenfalls Fragen stellen.</i>
+        <br>
         <a href="javascript:linkTo_UnCryptMailto('rfnqyt?wt~2rjnxxsjwElr}3sjy', 5);" target="_blank" class="btn btn-warning" id="btn-1" role="button"><i class="fa fa-fw fa-lg fa-envelope"></i>E-Mail an uns</a>
-      </div><!--/col-lg-4 -->
+      </div>
+      <!--/col-lg-4 -->
 
       <div class="col-lg-4">
-	<h4>Sind dir <i>Fehler aufgefallen</i>? Trag sie doch einfach in unserem Bugtracker ein!</h4><i>Denk aber bitte daran, dass wir nicht hellsehen können ;-) Wir brauchen eine genaue Bescheibung was nicht funktioniert hat und was du erwartet hast. Das am besten auch mit einem Screenshot!</i><br>
+        <h4>Sind dir <i>Fehler aufgefallen</i>? Trag sie doch einfach in unserem Bugtracker ein!</h4><i>Denk aber bitte daran, dass wir nicht hellsehen können ;-) Wir brauchen eine genaue Bescheibung was nicht funktioniert hat und was du erwartet hast. Das am besten auch mit einem Screenshot!</i>
+        <br>
         <a href="https://github.com/HTWK-App/Smartphone-App/issues/new" target="_blank" class="btn btn-warning" id="btn-2" role="button"><i class="fa fa-fw fa-lg fa-bug"></i>Bug melden</a>
-      </div><!--/col-lg-4 -->
-    </div><!-- /row -->
+      </div>
+      <!--/col-lg-4 -->
+    </div>
+    <!-- /row -->
     <hr>
-  </div>  <!--/container -->
+  </div>
+  <!--/container -->
 
   <div class="container" id="team">
     <div class="row mt centered">
       <div class="col-lg-6 col-lg-offset-3">
         <h1>Unser aktuelles Team:</h1>
       </div>
-    </div><!-- /row -->
+    </div>
+    <!-- /row -->
 
     <div class="row mt centered" id="members">
       <div class="col-lg-6">
         <img class="img-circle" src="//avatars.githubusercontent.com/u/1965431?" width="140" alt="">
         <h4>Henri Knochenhauer</h4>
-        <p>Java Server-Applikation<br>
-           Server-Betrieb</p>
-        <p><i><a href="javascript:linkTo_UnCryptMailto('rfnqyt?mpsthmnElrfnq3htr', 5);"><i class="fa fa-lg fa-envelope"></i></a></i> <i><a href="http://www.hknochi.de/about" target="_blank"><i class="fa fa-lg fa-globe"></i></a></i></p>
-      </div><!--/col-lg-4 -->
+        <p>Java Server-Applikation
+          <br> Server-Betrieb
+        </p>
+        <p><i><a href="javascript:linkTo_UnCryptMailto('rfnqyt?mpsthmnElrfnq3htr', 5);"><i class="fa fa-lg fa-envelope"></i></a>
+          </i> <i><a href="http://www.hknochi.de/about" target="_blank"><i class="fa fa-lg fa-globe"></i></a>
+          </i>
+        </p>
+      </div>
+      <!--/col-lg-4 -->
       <div class="col-lg-6">
         <img class="img-circle" src="//avatars.githubusercontent.com/u/855967?" width="140" alt="">
         <h4>Roy Meissner</h4>
-        <p>Projektleitung<br>
-           Mobile-App<br>
-           Scala-Microservices<br>
-           Server-Betrieb</p>
-        <p><i><a href="javascript:linkTo_UnCryptMailto('rfnqyt?wt~2rjnxxsjwElr}3sjy', 5);"><i class="fa fa-lg fa-envelope"></i></a></i> <i><a href="//rmeissn.github.io" target="_blank"><i class="fa fa-lg fa-globe"></i></a></i></p>
-      </div><!--/col-lg-4 -->
-    </div><!-- /row -->
-		<div class="row mt centered">
+        <p>Projektleitung
+          <br> Mobile-App
+          <br> Scala-Microservices
+          <br> Server-Betrieb
+        </p>
+        <p><i><a href="javascript:linkTo_UnCryptMailto('rfnqyt?wt~2rjnxxsjwElr}3sjy', 5);"><i class="fa fa-lg fa-envelope"></i></a>
+          </i> <i><a href="//rmeissn.github.io" target="_blank"><i class="fa fa-lg fa-globe"></i></a>
+          </i>
+        </p>
+      </div>
+      <!--/col-lg-4 -->
+    </div>
+    <!-- /row -->
+    <div class="row mt centered">
       <div class="col-lg-6 col-lg-offset-3">
         <h2>Wer uns alles unterstützt hat:</h2>
       </div>
-    </div><!-- /row -->
+    </div>
+    <!-- /row -->
     <div class="row mt centered">
-     <div class="col-lg-4">
+      <div class="col-lg-4">
         <h4>Matthias Tempel</h4>
         <i class="retired">Anpassungen für iPhone/iPad</i>
-      </div><!--/col-lg-4 -->
-       <div class="col-lg-4">
+      </div>
+      <!--/col-lg-4 -->
+      <div class="col-lg-4">
         <h4>Benjamin Westphal</h4>
         <i class="retired">Design der Icons und der App</i>
-      </div><!--/col-lg-4 -->
-       <div class="col-lg-4">
+      </div>
+      <!--/col-lg-4 -->
+      <div class="col-lg-4">
         <h4>Hubertus Willuhn</h4>
         <i class="retired">Programmierung der Smartphone-App<br>Refactoring und Performance-Optimierung</i>
-      </div><!--/col-lg-4 -->
-		</div>
-		<div class="row mt centered">
-			<div class="col-lg-6 col-lg-offset-3">
+      </div>
+      <!--/col-lg-4 -->
+    </div>
+    <div class="row mt centered">
+      <div class="col-lg-6 col-lg-offset-3">
         <h4>Sowie jede Menge Betatester!</h4>
       </div>
     </div>
     <hr/>
-  </div><!-- /container -->
+  </div>
+  <!-- /container -->
 
-    <footer class="footer">
-      <div class="container">
-        <p class="centered">Design by BlackTie.co - Attribution License 3.0 - 2014 , edited by us<br/> Icons by <a href="http://www.pixelkit.com/"  target="_blank">PixelKit</a> - Creative Commons Attribution 3.0 Unported (CC BY 3.0)</p>
-      </div>
-    </footer>
+  <footer class="footer">
+    <div class="container">
+      <p class="centered">Design by BlackTie.co - Attribution License 3.0 - 2014 , edited by us
+        <br/> Icons by <a href="http://www.pixelkit.com/" target="_blank">PixelKit</a> - Creative Commons Attribution 3.0 Unported (CC BY 3.0)</p>
+    </div>
+  </footer>
 
-    <div id="noApp" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="ModalLabel">Alternativen für die Mobile App</h4>
-          </div>
-          <div class="modal-body">
-            <p>Du hast ein <i>Iphone</i>, <i>Blackberry</i> oder etwas ganz <i>anderes</i> und findest unsere App im jeweiligen Store nicht? Kein Problem. Auch auf diesen Geräten kannst du unsere App nutzen!</p>
-            <hr>
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-md-6">
-                  <h4>Anleitung</h4>
-                  <p>Die meisten Browser können Links zu Webseiten genau so auf deinem Homescreen platzieren, als ob du eine App starten würdest.</p>
-                  <p> Unter Chrome findest du diese Funktion auf einer Webseite im Menü unter "<i>Zum Startbildschirm hinzufügen</i>". Öffne einfach die App über den folgenden Button und füge sie zu deinem Startbildschirm hinzu.</p>
-                  <div class=" text-center">
-                    <a href="https://htwk-app.imn.htwk-leipzig.de/app" target="_blank" class="btn btn-success" style="font-size: 100%; margin: 0; margin-bottom: 10px;">Zur HTWK-App</a>
-                  </div>
+  <div id="noApp" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title" id="ModalLabel">Alternativen für die Mobile App</h4>
+        </div>
+        <div class="modal-body">
+          <p>Du hast ein <i>Iphone</i>, <i>Blackberry</i> oder etwas ganz <i>anderes</i> und findest unsere App im jeweiligen Store nicht? Kein Problem. Auch auf diesen Geräten kannst du unsere App nutzen!</p>
+          <hr>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-6">
+                <h4>Anleitung</h4>
+                <p>Die meisten Browser können Links zu Webseiten genau so auf deinem Homescreen platzieren, als ob du eine App starten würdest.</p>
+                <p> Unter Chrome findest du diese Funktion auf einer Webseite im Menü unter "<i>Zum Startbildschirm hinzufügen</i>". Öffne einfach die App über den folgenden Button und füge sie zu deinem Startbildschirm hinzu.</p>
+                <div class=" text-center">
+                  <a href="https://htwk-app.imn.htwk-leipzig.de/app" target="_blank" class="btn btn-success" style="font-size: 100%; margin: 0; margin-bottom: 10px;">Zur HTWK-App</a>
                 </div>
-                <div class="col-md-6"><img src="assets/images/chrome.png" width="100%"></div>
               </div>
+              <div class="col-md-6">
+                <img src="assets/images/chrome.png" width="100%">
+              </div>
+            </div>
           </div>
         </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-primary" data-dismiss="modal">Schließen</button>
-          </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Schließen</button>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Bootstrap core JavaScript
+  <!-- Bootstrap core JavaScript
     ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script type="application/javascript" src="//code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script type="application/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-   	<script type="application/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" defer></script>
-    <script type="application/javascript" src="assets/javascript/docs.min.js"></script>
-    <script type="application/javascript" src="assets/javascript/prettify.js"></script>
-    <script type="application/javascript">
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="application/javascript" src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script type="application/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+  <script type="application/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" defer></script>
+  <script type="application/javascript" src="assets/javascript/docs.min.js"></script>
+  <script type="application/javascript" src="assets/javascript/prettify.js"></script>
+  <script type="application/javascript">
+    $("div#presentation div.overlay").one("click", function() {
+      $('div#presentation').append('<iframe src="//rawgit.com/HTWK-App/Smartphone-App/master/www/index.html" id="presentation"></iframe>');
+      $(this).toggle();
 
-      $("div#presentation div.overlay").one("click", function(){
-        $('div#presentation').append('<iframe src="//rawgit.com/HTWK-App/Smartphone-App/master/www/index.html" id="presentation"></iframe>');
-          $(this).toggle();
+    });
 
-      });
-
-			function UnCryptMailto(s, shift) {
-        var n=0;
-        var r="";
-        for(var i = 0; i < s.length; i++) {
-          n = s.charCodeAt(i);
-          if (n>=8364) n = 128;
-          r += String.fromCharCode(n-(shift));
-        }
-        return r;
+    function UnCryptMailto(s, shift) {
+      var n = 0;
+      var r = "";
+      for (var i = 0; i < s.length; i++) {
+        n = s.charCodeAt(i);
+        if (n >= 8364) n = 128;
+        r += String.fromCharCode(n - (shift));
       }
+      return r;
+    }
 
-      function linkTo_UnCryptMailto(s, shift) {
-        location.href = UnCryptMailto(s, shift);
-      }
+    function linkTo_UnCryptMailto(s, shift) {
+      location.href = UnCryptMailto(s, shift);
+    }
 
-      // jQuery for page scrolling feature - requires jQuery Easing plugin
-      $('a.page-scroll').bind('click', function(event) {
-          var $anchor = $(this);
-          $('html, body').stop().animate({
-              scrollTop: $($anchor.attr('href')).offset().top
-          }, 1500, 'easeInOutExpo');
-          event.preventDefault();
-      });
+    // jQuery for page scrolling feature - requires jQuery Easing plugin
+    $('a.page-scroll').bind('click', function(event) {
+      var $anchor = $(this);
+      $('html, body').stop().animate({
+        scrollTop: $($anchor.attr('href')).offset().top
+      }, 1500, 'easeInOutExpo');
+      event.preventDefault();
+    });
 
-      // Closes the Responsive Menu on Menu Item Click
-      $('.navbar-collapse ul li a').click(function() {
-          $('.navbar-toggle:visible').click();
-      });
-		</script>
-	</body>
+    // Closes the Responsive Menu on Menu Item Click
+    $('.navbar-collapse ul li a').click(function() {
+      $('.navbar-toggle:visible').click();
+    });
+  </script>
+</body>
+
 </html>
