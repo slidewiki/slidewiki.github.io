@@ -119,7 +119,7 @@
         <h4>Webseite</h4>
         <hr>
         <p>Die App wurde als Webseite entworfen und setzt damit auf HTML, CSS und Javascript. Damit können wir den Studenten und Mitarbeitern der HTWK eine moderne Oberfläche präsentieren, die leicht umgebaut werden kann.</p>
-        <p> Wir benutzten <a href="//jquery.com/" target="_blank">JQuery</a> in Verbindung mit Javascript für die Logik, <a href="//jquerymobile.com/" target="_blank">JQueryMobile</a> für die UI und <a href="//fortawesome.github.io/Font-Awesome/" target="_blank">FontAwesome</a>          für Icons. Daten, die die App anzeigt, werden brandaktuell und unter Nutzung neuster Technologien von einem Server bezogen.</p>
+        <p> Wir benutzten <a href="//jquery.com/" target="_blank">jQuery</a> in Verbindung mit Javascript für die Logik, <a href="//jquerymobile.com/" target="_blank">jQueryMobile</a> für die UI und <a href="//fortawesome.github.io/Font-Awesome/" target="_blank">FontAwesome</a> für Icons. Die in der App angezeigten Daten werden brandaktuell und unter Nutzung neuster Technologien von mehreren Web-Diensten bezogen.</p>
       </div>
       <!--/col-lg-4 -->
 
@@ -127,8 +127,7 @@
         <img src="assets/images/Icons/server.png" width="128" height="128" alt="">
         <h4>Server</h4>
         <hr>
-        <p>Die Server-Anwendung besteht aus mehreren <a href="//en.wikipedia.org/wiki/Microservices" target="_blank">Microservices</a>, die vornehmlich in Java und Scala geschrieben sind. Unter Java wird das <a href="//projects.spring.io/spring-framework/"
-          target="_blank">Spring-Framework</a>, unter Scala das <a href="//www.playframework.com" target="_blank">Play-Framework</a> benutzt. Der Server bieten eine HTTP-Rest Schnittstelle an, von der JSON formatierte Daten bezogen werden können.</p>
+        <p>Die Server-Anwendung besteht aus mehreren <a href="//en.wikipedia.org/wiki/Microservices" target="_blank">Microservices</a>, die vornehmlich in Java und Scala geschrieben sind. Unter Java wird das <a href="//projects.spring.io/spring-framework/" target="_blank">Spring Framework</a>, unter Scala das <a href="//www.playframework.com" target="_blank">Play Framework</a> benutzt. Die Dienste bieten eine HTTP-Rest Schnittstelle an, von der JSON formatierte Daten bezogen werden können.</p>
       </div>
       <!--/col-lg-4 -->
 
@@ -136,9 +135,8 @@
         <img src="assets/images/Icons/app.png" width="128" height="128" alt="">
         <h4>App</h4>
         <hr>
-        <p>Das Framework <a href="//cordova.apache.org" target="_blank">Apache Cordova</a> transformiert die Webseite in eine App, die in alle gängigen App-Stores gestellt werden kann. Für den Google Play-Store haben wir das schon gemacht, für alle anderen
-          suchen wir noch Möglichkeiten...(ganz ehrlich Apple...100$ pro Jahr für ein Non-Profit Projekt?!).</p>
-        <p>Under the Hood wird ein Browser auf deinem Smartphone gestartet, der die Webseite lädt. Nur die Bedienelemente des Browsers fehlen.</p>
+        <p>Das Framework <a href="//cordova.apache.org" target="_blank">Apache Cordova</a> transformiert die Webseite in eine App, die in alle gängigen App-Stores gestellt werden kann. Für den Google Play-Store haben wir das schon gemacht, für alle anderen suchen wir noch Möglichkeiten...(ganz ehrlich Apple...100$ pro Jahr für ein Non-Profit Projekt?!).</p>
+        <p>Under the Hood wird ein Browser auf deinem Smartphone gestartet, der die Webseite lädt, wobei die Bedienelemente ausgeblendet werden.</p>
       </div>
       <!--/col-lg-4 -->
     </div>
@@ -182,7 +180,7 @@
   <div id="server" class="container">
     <div class="row mt centered">
       <div class="col-lg-6 col-lg-offset-3">
-        <h1>Die Server</h1>
+        <h1>Die Microservices</h1>
         <h3>Neuste Technologie, coole Programmiersprachen, Frameworks die einen Blick lohnen und jede Menge Funktionen</h3>
       </div>
     </div>
@@ -190,12 +188,9 @@
 
     <div class="row mt centered">
       <div class="col-lg-4">
-        <p>Anfang 2014 wurde ein Java-Server (<a href="//projects.spring.io/spring-framework/" target="_blank">Spring</a>) entwickelt, der aktuell den Großteil der Informationsbereitstellung übernimmt. Anfang 2015 wurde dieser um einige Microservices (
-          <a href="//www.playframework.com" target="_blank">Scala-Play</a>) ergänzt, die Teile der Server-Anwendung überschatten (zwecks Fehlerbehebung) und neue Funktionalität hinzufügen. Die gesamte Struktur ist hinter einem <a href="//de.wikipedia.org/wiki/Reverse_Proxy"
-          target="_blank">Reverse-Proxy</a> (Nginx) verschalten, um einen zentralen <a href="//github.com/HTWK-App/htwk-app.github.io/wiki/Server-API" target="_blank">Zugriffspunkt</a> zu schaffen</p>
-        <p>Wir benutzten <a href="//www.docker.com/" target="_blank">Docker</a> als Virtualisierungsumgebung und <a href="//newrelic.com/" target="_blank">NewRelic</a> für das Monitoring. Alles läuft auf einer virtuellen Maschine (<a href="http://www.ubuntu.com/server"
-          target="_blank">Ubuntu 14.04</a>), mit freundlicher Unterstützung des Rechenzentrums der HTWK.</p>
-        <p>Alle Server stehen unter einer Open-Source Lizenz und können bei <a href="//github.com/HTWK-App" target="_blank">Github</a> eingesehen werden.</p>
+        <p>Anfang 2014 wurde ein Java-Dienst (<a href="//projects.spring.io/spring-framework/" target="_blank">Spring</a>) entwickelt, der aktuell den Großteil der Informationsbereitstellung übernimmt. Anfang 2015 wurde dieser um einige Microservices (<a href="//www.playframework.com" target="_blank">Scala-Play</a>) ergänzt, die Teile der bisherigen Anwendung überschatten (zwecks Fehlerbehebung) und neue Funktionalität hinzufügen. Die gesamte Struktur ist hinter einem <a href="//de.wikipedia.org/wiki/Reverse_Proxy" target="_blank">Reverse-Proxy</a> (Nginx) verschalten, um einen zentralen <a href="//github.com/HTWK-App/htwk-app.github.io/wiki/Server-API" target="_blank">Zugriffspunkt</a> zu schaffen</p>
+        <p>Wir benutzten <a href="//www.docker.com/" target="_blank">Docker</a> als Virtualisierungsumgebung, <a href="//newrelic.com/" target="_blank">NewRelic</a> für das Monitoring und <a href="//snap-ci.com/" target="_blank">Snap-CI</a> für <a href="https://de.wikipedia.org/wiki/Kontinuierliche_Integration" target="_blank">Continouos Integration</a>. Alles läuft auf einer virtuellen Maschine (<a href="http://www.ubuntu.com/server" target="_blank">Ubuntu 14.04</a>), mit freundlicher Unterstützung des Rechenzentrums der HTWK.</p>
+        <p>Alle Dienste stehen unter einer Open-Source Lizenz und können bei <a href="//github.com/HTWK-App" target="_blank">Github</a> eingesehen werden.</p>
       </div>
 
       <div class="col-lg-8">
@@ -226,7 +221,7 @@
       <!--/col-lg-4 -->
 
       <div class="col-lg-4">
-        <h4>Bei uns kannst du dich mit <i>Web-Servern</i> und einer <i>Web-Anwendung</i> beschäftigen. Willst du unsere Software erweitern, neue Konzepte einarbeiten oder Fehler beheben? Wir helfen gern und keine Angst: wir beißen nicht ;)</h4><i>Hast du schonmal von Googles Polymer gehört? Damit einen neuen Client zu schreiben wäre echt cool! Auch gern im Rahmen eines Studienprojekts!</i>
+        <h4>Bei uns kannst du dich mit <i>Web-Diensten</i> und einer <i>Web-Anwendung</i> beschäftigen. Willst du unsere Software erweitern, neue Konzepte einarbeiten oder Fehler beheben? Wir helfen gern und keine Angst: wir beißen nicht ;)</h4><i>Hast du schonmal von Googles Polymer gehört? Damit einen neuen Client zu schreiben wäre echt cool! Auch gern im Rahmen eines Studienprojekts!</i>
         <br>
         <a href="javascript:linkTo_UnCryptMailto('rfnqyt?wt~2rjnxxsjwElr}3sjy', 5);" target="_blank" class="btn btn-warning" id="btn-1" role="button"><i class="fa fa-fw fa-lg fa-envelope"></i>E-Mail an uns</a>
       </div>
