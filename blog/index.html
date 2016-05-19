@@ -1,0 +1,121 @@
+---
+title: SlideWiki - Developer Blog
+---
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="SlideWiki - Developer Blog" />
+    <meta name="author" content="Kurt Junghanns" />
+
+    <link rel="shortcut icon" href="/ressources/icons/favicon.png" />
+
+    <title>Slidewiki - Information for Developers</title>
+
+    <!-- Bootstrap + FontAwesome -->
+    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/main.css">
+    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" defer>
+
+    <!-- Fonts from Google Fonts -->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato:300,400,900" defer>
+</head>
+
+<body>
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="//slidewiki.eu"><b>Slidewiki</b></a>
+            </div>
+        </div>
+    </div>
+
+    <div id="list" class="container">
+        <div class="row mt centered">
+            <div class="col-lg-6 col-lg-offset-3">
+                <h1>SlideWiki Developer Blog</h1>
+                <h3>The Wisdom of Crowds</h3>
+            </div>
+        </div>
+        <!-- /row -->
+
+        <div class="row mt centered">
+          
+          <ul class="post-list">
+            {% for post in site.posts %}
+              <li>
+                <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+                <h2>
+                  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                </h2>
+              </li>
+            {% endfor %}
+          </ul>
+
+        </div>
+        <!-- /row -->
+        <hr>
+    </div>
+    <!--/container -->
+
+    <footer class="footer">
+        <div class="container">
+            <p class="centered">Design by BlackTie.co - Attribution License 3.0 - 2014 , edited by us
+                <br/> Icons by <a href="http://www.pixelkit.com/" target="_blank">PixelKit</a> - Creative Commons Attribution 3.0 Unported (CC BY 3.0)</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="application/javascript" src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="application/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script type="application/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" defer></script>
+    <script type="application/javascript" src="/ressources/js/docs.min.js"></script>
+    <script type="application/javascript" src="/ressources/js/prettify.js"></script>
+    <script type="application/javascript">
+        function UnCryptMailto(s, shift) {
+            var n = 0;
+            var r = "";
+            for (var i = 0; i < s.length; i++) {
+                n = s.charCodeAt(i);
+                if (n >= 8364) n = 128;
+                r += String.fromCharCode(n - (shift));
+            }
+            return r;
+        }
+
+        function linkTo_UnCryptMailto(s, shift) {
+            location.href = UnCryptMailto(s, shift);
+        }
+
+        // jQuery for page scrolling feature - requires jQuery Easing plugin
+        $('a.page-scroll').bind('click', function(event) {
+            var $anchor = $(this);
+            $('html, body').stop().animate({
+                scrollTop: $($anchor.attr('href')).offset().top
+            }, 1500, 'easeInOutExpo');
+            event.preventDefault();
+        });
+
+        // Closes the Responsive Menu on Menu Item Click
+        $('.navbar-collapse ul li a').click(function() {
+            $('.navbar-toggle:visible').click();
+        });
+    </script>
+</body>
+
+</html>

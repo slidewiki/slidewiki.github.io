@@ -1,3 +1,0 @@
----
----
-The Wisdom of Crowds
