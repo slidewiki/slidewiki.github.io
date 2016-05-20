@@ -1,0 +1,44 @@
+---
+title:  "Jekyll"
+date:   2016-05-20 13:35:41
+author: Kurt Junghanns (InfAI)
+---
+<h3>Extending our developer website with a custom blog</h3>
+<br>
+<p>
+As a catchy introduction for developers we created the SlideWiki GitHub page <a href="https://slidewiki.github.io">slidewiki.github.io</a>.
+Because GitHub is a dream of a developer platform, we also want to use it to publish our inventions and hacks.
+Thus <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> is the best solution in order to work with GitHub pages and multiple developers who want to publish content.
+</p>
+<p>
+The following will descripe how Jekyll is used, how to write your Jekyll blog locally and why we don't use jekyll-bootstrap.
+</p>
+<i>
+For me Jekyll is the same for GitHub pages as SASS is for CSS.
+You write your content with help of the engine - e.g. modularity, reusability, linking - and it's parsed with the engine to your static content.
+So you define the default style for types, tags it and write pages which handles all the content and style with <a href="https://github.com/Shopify/liquid/wiki" target="_blank">Liquid</a>.
+</i>
+<p>
+At the moment we have two pages, one as the entry point which the whole overview of what we think is interesting and the other which lists all blog entrys.
+These are written in HTML and include both the well know <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a> within <a href="https://jquery.com/" target="_blank">JQuery</a> and <a href="http://fontawesome.io/" target="_blank">Font Awesome</a>.
+The blog entrys are also written in HTML to use the same style as the two pages.
+We don't benefit from the features Jekyll can give us.
+Only when we migrate our style from bootstrap to the Jekyll environment we will change this.
+In order to add your blog entry just clone the repo:
+<code>
+git clone git@github.com:slidewiki/slidewiki.github.io.git
+</code>
+Add your new blog entry:
+<code>
+cp _posts/2016-05-19-example-post.html _posts/YYYY-MM-DD-name.html
+</code>
+Change the metadata and the content with your favourite editor.
+Preview it with docker:
+<code>
+docker run --rm --label=jekyll --volume=$(pwd):/srv/jekyll --privileged=true -it -p 127.0.0.1:4000:4000 jekyll/jekyll
+</code>
+If you are satisfied with it push it to the repo:
+<code>
+git commit -am "added my blog entry" && git push
+</code>
+</p>
