@@ -52,18 +52,26 @@ title: SlideWiki - Developer Blog
         <!-- /row -->
 
         <div class="row mt centered">
-          
-          <ul class="post-list">
-            {% for post in site.posts %}
-              <li>
-                <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-                <h2>
-                  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                </h2>
-              </li>
+
+            {% for post in site.posts %}
+            <div class="container">
+                <hr>
+                <div class="row mt centered">
+                    <div class="col-lg-6 col-lg-offset-3">
+                        <h1>{{ post.title }}</h1>
+                        <h3>{{ post.date | date: "%b %-d, %Y" }}</h3>
+                    </div>
+                </div>
+                <!-- /row -->
+
+                <div class="row mt centered">
+                  {{ post }}
+                </div>
+                <!-- /row -->
+            </div>
+            <!--/container -->
             {% endfor %}
-          </ul>
 
         </div>
         <!-- /row -->
