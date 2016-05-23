@@ -7,9 +7,9 @@ authorURI: http://aksw.org/KurtJunghanns.html
 <h3>Extending our developer website with a custom blog</h3>
 <br>
 <p>
-  As a catchy introduction for developers we created the SlideWiki GitHub page <a href="https://slidewiki.github.io">slidewiki.github.io</a>.
+  As a catchy introduction for developers we created the SlideWiki GitHub page <a href="//slidewiki.github.io">slidewiki.github.io</a>.
   Because GitHub is a dream of a developer platform, we also wanted to use it to publish our upcoming inventions and hacks.
-  Thus <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> is the best solution in order to work with GitHub pages and multiple developers who want to publish content.
+  Thus <a href="//jekyllrb.com/" target="_blank">Jekyll</a> is the best solution in order to work with GitHub pages and multiple developers who want to publish content.
 </p>
 <p>
   The following will descripe how Jekyll is used, how to write your Jekyll blog locally and why we don't use jekyll-bootstrap.
@@ -20,15 +20,15 @@ authorURI: http://aksw.org/KurtJunghanns.html
   You write your content with help of the engine - e.g. modularity, reusability, linking - and it's parsed with the engine to your static content.
   So you define the style, structure and handling depending on the type and metadata with <a href="https://github.com/Shopify/liquid/wiki" target="_blank">Liquid</a>, tag it and write pages which contains or link your glistening blog entries.
 </i><br>
-  At the moment we have two pages, one as the entry point with the whole overview of what we think is interesting and the other which lists all blog entrys.
+  At the moment we have two pages, one as the entry point with the whole overview of what we think is interesting and the other, which lists all blog entries.
   These are written in HTML and include both the well know <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>  within <a href="https://jquery.com/" target="_blank">JQuery</a> and <a href="http://fontawesome.io/" target="_blank">Font Awesome</a>.
-  The blog entrys are also written in HTML to use the same style as the two pages.
-  We make use of the layout and include mechanism provided by Liquid but we have no use for <a href="http://sass-lang.com/" target="_blank">SASS</a> right now.
+  The blog entrys are written in HTML as well to use the same style as the two pages.
+  We make use of the layout and include mechanisms provided by Liquid but we not using <a href="http://sass-lang.com/" target="_blank">SASS</a> right now.
 </p>
 <p>
   In order to add your blog entry
   <ol>
-    <li>just clone the repo:
+    <li>clone the repo:
       <code>
 git clone git@github.com:slidewiki/slidewiki.github.io.git
 </code>
@@ -45,19 +45,19 @@ cp _posts/2016-05-19-example-post.html _posts/YYYY-MM-DD-name.html
     <li>
       Preview it with docker:
       <code>
-docker run --rm --label=jekyll --volume=$(pwd):/srv/jekyll --privileged=true -it -p 127.0.0.1:4000:4000 jekyll/jekyll
+docker run --rm --label=jekyll --volume=$(pwd):/srv/jekyll --privileged=true -it -p 4000:4000 jekyll/jekyll
 </code>
     </li>
     <li>
       If you are satisfied with it push it to the repo:
       <code>
-git commit -am "added my blog entry \"foobar\"" && git push
+git commit -am "Added blog entry about \"foobar\"" && git push
 </code>
     </li>
   </ol>
 </p>
 <p>
-  As we are using Bootstrap on Jekyll we also took a look at <a href="http://jekyllbootstrap.com/" target="_blank">jekyll-bootstrap</a> in order to have Bootstrap build in.
-  But we have decided us against it because the config files were broken at that week, it does not work well with the <a href="https://hub.docker.com/r/jekyll/jekyll/" target="_blank">Jekyll docker container</a> and it is too heavy at the moment.
-  We will reconsider using it when this blog should migrate away from GitHub pages and/or should be extended with more features.
+  As we are using Bootstrap on Jekyll we also took a look at <a href="http://jekyllbootstrap.com/" target="_blank">jekyll-bootstrap</a> in order to have Bootstrap built-in.
+  Unfortunately it does not work well with the <a href="https://hub.docker.com/r/jekyll/jekyll/" target="_blank">Jekyll docker container</a> out of the box and it is too heavy at the moment.
+  We will reconsider using it as soon as this blog will be migrated or should be extended with more features.
 </p>
