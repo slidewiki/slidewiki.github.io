@@ -69,6 +69,13 @@ title: SlideWiki - Developer Blog
                   {{ post }}
                 </div>
                 <!-- /row -->
+
+                {% if post.author != null %}
+                <div class="row mt centered">
+                  <small><a href="{{ post.authorURI }}">{{ post.author }}</a></small>
+                </div>
+                {% endif %}
+                <!-- /row -->
             </div>
             <!--/container -->
             {% endfor %}

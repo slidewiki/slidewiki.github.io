@@ -211,3 +211,13 @@ hr {
     font-weight: 300;
     letter-spacing: 1px;
 }
+
+li {
+  text-align: left;
+}
+
+ol {
+  text-align: center;
+  align-self: center;
+  align-content: center;
+}
