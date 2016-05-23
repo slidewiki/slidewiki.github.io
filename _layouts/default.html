@@ -1,7 +1,15 @@
----
+<!DOCTYPE html>
+<html lang="en">
 
----
+{% include head.html %}
 
-{% if post && post.css %}
-  <link rel='stylesheet' type='text/css' href='main.css' />
-{% endif %}
+<body>
+
+  {% include header.html %}
+
+  {{ content }}
+
+  {% include footer.html %}
+
+  {% include scripts.html %}
+</body>
