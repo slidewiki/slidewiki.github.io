@@ -5,6 +5,7 @@ author: rm
 ---
 
 <!DOCTYPE html>
+
 <html lang="en">
 
 {% include head.html %}
@@ -34,13 +35,13 @@ author: rm
                         <a class="page-scroll" href="#services">Our Microservices</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#blog">Blog</a>
-                    </li>
-                    <li>
                         <a class="page-scroll" href="#opensource">How to Contribute</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#team">Persons of Contact</a>
+                    </li>
+                    <li>
+                        <a href="/blog">Blog</a>
                     </li>
                 </ul>
             </div>
@@ -92,7 +93,8 @@ author: rm
                 <h4>WebApp</h4>
                 <hr>
                 <p>Slidewiki is basically a web-application built with HTML, CSS and Javascript. Because there are so many cool developers and frameworks out there, we were able to develop a userfriendly and modern UI that can be simply customized to the
-                    ground.</p>
+                    ground.
+                </p>
                 <p> We're using <a href="//facebook.github.io/react/" target="_blank">React</a> for our frontend, <a href="http://fluxible.io/" target="_blank">Fluxible</a> as our programming paradigma and <a href="//nodejs.org/en/" target="_blank">NodeJS</a>                    as our base technology layer. Most jobs are executed at your machine - the client - and we're running a whole system of <a href="//en.wikipedia.org/wiki/Microservices" target="_blank">microservices</a> to keep you consistent and up
                     to date.</p>
             </div>
@@ -185,24 +187,6 @@ author: rm
     </div>
     <!--/container -->
 
-
-    <div id="blog" class="container">
-        <div class="row mt centered">
-            <div class="col-lg-6 col-lg-offset-3">
-                <h1>Our Developer Blog</h1>
-                <h3>Take a look at things keeping us busy! There you will find solutions and inventions.</h3>
-            </div>
-        </div>
-        <!-- /row -->
-
-        <div class="row mt centered">
-          <h4><a href="/blog">Awesome Blog</a></h4>
-        </div>
-        <!-- /row -->
-        <hr>
-    </div>
-    <!--/container -->
-
     <div id="opensource" class="container">
         <div class="row mt centered">
             <div class="col-lg-8 col-lg-offset-2">
@@ -288,10 +272,11 @@ author: rm
         <hr>
     </div>
     <!-- /container -->
+    <div class="scroll-top-wrapper ">
+        <i class="fa fa-2x fa-arrow-circle-up"></i>
+    </div>
 
-    {% include footer.html %}
-
-    {% include scripts.html %}
+    {% include footer.html %} {% include scripts.html %}
 </body>
 
 </html>
