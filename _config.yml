@@ -8,6 +8,7 @@
 # Site settings
 title: SlideWiki
 description: Information for Developers at Slidewiki
+url: https://slidewiki.github.io
 
 # Build settings
 markdown: kramdown
