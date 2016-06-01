@@ -5,11 +5,13 @@
 
 <body>
 
-  {% include header.html %}
-
-  {{ content }}
-
-  {% include footer.html %}
-
-  {% include scripts.html %}
+    {% include header.html %}
+    {{ content }}
+    {% include footer.html %}
+    <div class="scroll-top-wrapper ">
+        <i class="fa fa-2x fa-arrow-circle-up"></i>
+    </div>
+    {% include scripts.html %}
 </body>
+
+</html>
