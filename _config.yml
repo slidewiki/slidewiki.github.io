@@ -27,3 +27,6 @@ authors:
     web: http://aksw.org/RoyMeissner.html
     github: rmeissn
     organisation: InfAI
+
+gems:
+  - jekyll-feed
