@@ -3,13 +3,13 @@ title:  "slidewiki/devserver - Run the SlideWiki Platform out-of-the-box"
 date:   2016-07-26 18:00:00 +0000
 layout: post
 ---
-The SlideWiki Platform will be delivered as a read-to-run Docker container. 
+The SlideWiki Platform will be delivered as a ready-to-run Docker container. 
 But Docker can also help in simplifying development. Based on the runtime
 image for the platform we have developed a dynamic version that makes it 
 possible to edit the source code and hot-deploy your changes each time you
 save it. 
 The image that is available from Docker Hub as `slidewiki/devserver` mounts
-the source code of the platform from your host filesystem and monitor changes,
+the source code of the platform from your host filesystem and monitors changes,
 restarting the server each time a file is updated. This gives you the ability 
 to use your development environment to develop in SlideWiki without the need
 to install the NodeJS ecosystem. You only need the source code and the devserver
@@ -22,7 +22,7 @@ in Docker always needs absolute paths). Also you need to provide a port on
 your host to bin the container's nodeJS application port to. A typpical 
 invocation looks like this:
 
-`docker run --rm -it --name swdev -p 3000:3000 -v /absolute/path/to/project:/app slidewiki/devserver`
+`docker run -it --rm --name swdev -p 3000:3000 -v /absolute/path/to/project:/app slidewiki/devserver`
 
 ## Microservices
 In the `/configs` directory in the project there needs to be a file that 
@@ -36,4 +36,6 @@ unless you want to use your own microservice instances **you just don't need to 
 Most displeasingly the devserver image does not work on Windows hosts as of now. The
 reason is that the container runs `npm install` on startup in the project directory. 
 Since the project directory resides in the Windows host filesystem it fails to create
-symlinks when installing the dependencies. The bug is known and files as [SWIK-286](https://slidewiki.atlassian.net/browse/SWIK-286)
+symlinks when installing the dependencies. The bug is known and filed as [SWIK-286](https://slidewiki.atlassian.net/browse/SWIK-286)
+
+[Benjamin Wulff](https://github.com/bwulff)
