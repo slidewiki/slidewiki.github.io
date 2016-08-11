@@ -8,7 +8,7 @@ But Docker can also help in simplifying development. Based on the runtime
 image for the platform we have developed a dynamic version that makes it 
 possible to edit the source code and hot-deploy your changes each time you
 save it. 
-The image that is available from Docker Hub as `slidewiki/devserver` mounts
+The image that is available from [Docker Hub](https://hub.docker.com/r/slidewiki/devserver/) as `slidewiki/devserver` mounts
 the source code of the platform from your host filesystem and monitors changes,
 restarting the server each time a file is updated. This gives you the ability 
 to use your development environment to develop in SlideWiki without the need
@@ -22,7 +22,7 @@ in Docker always needs absolute paths). Also you need to provide a port on
 your host to bin the container's nodeJS application port to. A typpical 
 invocation looks like this:
 
-`docker run -it --rm --name swdev -p 3000:3000 -v /absolute/path/to/project:/app slidewiki/devserver`
+`docker run -it --rm --name swdev -p 3000:3000 -v /absolute/path/to/project:/nodeApp slidewiki/devserver`
 
 ## Microservices
 In the `/configs` directory in the project there needs to be a file that 
