@@ -24,6 +24,9 @@ invocation looks like this:
 
 `docker run -it --rm --name swdev -p 3000:3000 -v /absolute/path/to/project:/nodeApp slidewiki/devserver`
 
+by default*, you should be able to see the running platform at http://localhost:3000
+* If you are on Mac OS, you still might need to check the settings for the environmental variable `DOCKER_HOST` and use the correct host like e.g. http://192.168.99.101:3000
+
 ## Microservices
 In the `/configs` directory in the project there needs to be a file that 
 configures the location of the microservices (`microservices.js`). We provide a 
