@@ -12,7 +12,7 @@
 }
 .txt {
     width: 50%;
-    text-align: center;
+    text-align: justify;
     font-weight: 500;
 }
 .contribute {
@@ -64,6 +64,9 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     color: #333;
+	clear: left;
+	clear: right;
+	text-align: left;
 }
 h1 {
     font-size: 40px;
@@ -84,6 +87,7 @@ p {
     line-height: 28px;
     margin-bottom: 25px;
     font-size: 16px;
+    text-align: justify;
 }
 .centered {
     text-align: center;
@@ -95,6 +99,7 @@ i {
     margin: 8px;
     color: #DA6619;
     transition: all 0.2s ease 0s;
+	text-align: justify;
 }
 #cs a, #frontend a, #services a, #opensource a, #team a, a > i, footer a {
     color: #1E78BB;
@@ -212,13 +217,21 @@ hr {
     letter-spacing: 1px;
 }
 li {
-    text-align: left;
+    text-align: justify;
 }
+/*
 ol {
     text-align: center;
     align-self: center;
     align-content: center;
 }
+*/
+
+iframe {
+	clear: left;
+	clear: right;	
+}
+
 .scroll-top-wrapper {
     position: fixed;
     opacity: 0;
@@ -238,4 +251,14 @@ ol {
     visibility: visible;
     cursor: pointer;
     opacity: 1.0;
+}
+
+.alignleft {
+    float: left;
+    margin: 10px;
+}
+
+.alignright {
+    float: right;
+    margin: 10px;
 }
