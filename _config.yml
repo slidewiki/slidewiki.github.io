@@ -7,7 +7,7 @@
 
 # Site settings
 title: SlideWiki Developer Blog
-description:  - Information for Developers at Slidewiki
+description:  &mdash; Information for Developers at Slidewiki
 url: https://slidewiki.github.io
 
 # Build settings
