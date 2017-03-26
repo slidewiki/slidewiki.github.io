@@ -3,6 +3,191 @@ title: "WebSci'17 - Using Docker for Web Science"
 layout: default
 description: "Introduction to conpects and best practices for using containerization in web science"
 ---
-<div class="container">
-  Under construction.
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="//slidewiki.eu"><b>Slidewiki</b></a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a class="page-scroll" href="#outline">Docker for Web Science</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#leaders">Course Leaders</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#schedule">Schedule</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#resources">Resources</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="container" id="outline" style="margin-top:50px">
+    <div class="row mt centered">
+        <div class="col-lg-6 col-lg-offset-3">
+            <h1>Docker for Web Science</h1>
+
+        </div>
+    </div>
+  <p>
+    Containerization is one of the bigger movements that emerged in the last
+    few years. Tools like Docker permit the rapid and easy composition of
+    Web-based applications in much the same way as traditional scripting
+    permitted the composition of traditional software. Increasingly,
+    many applications used by Web Science researchers will be complemented with
+    a Docker stack which removes much of the requirement for configuration.
+    An example of this is the Google TensorFlow image, which allows a machine
+    learning environment to be set up without any knowledge about the software
+    package itself.  In this tutorial we will introduce the tool Docker and
+    the associated Docker Compose which facilitates containerization and
+    deployment of any research environment.
+  </p>
+  <p>
+    A significant advantage of Docker for Web Science is that it makes deployment
+    of a research environment far easier, even for someone who does not have much
+    prior programming or infrastructure experience.  This is because once software
+    is “containerized”, it ships with its runtime environment. As a result, the
+    required steps have already been performed, so difficulties surrounding configuration
+    issues for different systems can be minimized.  Any customisations of containerized
+    software may also be stored explicitly, enabling easy and rapid redeployment of
+    developed environments.  This makes it an ideal approach for quickly setting up
+    a research environment, as well setting up any publicly accessible product since
+    less configuration is required between the two.
+  </p>
+  <p>
+    Our tutorial will demonstrate the advantages of using a microservices architecture,
+    and how this can be accomplished using Docker and Docker Compose. We will introduce
+    the most important features of the Docker technology for Web scientists, and give
+    in-depth insight into how Docker can be used to implement certain common processes
+    such as initial setup of a research environment, customisation, data management,
+    or Continuous Integration for developing Web applications. All presentations will be
+    illustrated with real-world examples from our experience in developing a complex Web
+    application for the SlideWiki project.
+  </p>
+  <p>
+    All presentations will be followed by hands-on activities in which the participants
+    exercise the use of the concepts explained in the presentation.  We will provide
+    participants with a Virtual Machine (VM) for this purpose.
+  </p>
+  <p>
+    By the end of the tutorial, participants should be able to do the following:
+    <ul>
+      <li>Install and run Docker and Docker Compose</li>
+      <li>Understand the benefits of containerization and pre-existing Docker stacks</li>
+      <li>Use a Docker container for a research or software development environment</li>
+      <li>Deploy multiple services simultaneously</li>
+    </ul>
+  </p>
+</div>
+<div class="container" id="leaders">
+    <div class="row mt centered">
+        <div class="col-lg-6 col-lg-offset-3">
+          <h2>Workshop Leaders</h2>
+        </div>
+          <p>
+            The people who will be leading this workshop are as follows:
+              <ul>
+                <li>
+                  <h3>Huw Fryer</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+                </li>
+                <li>
+                  <h3>Benjamin Wulff</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+                </li>
+                <li>
+                  <h3>Allan Third</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+                </li>
+                <li>
+                  <h3>Klaas Andries de Graaf</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+                </li>
+              </ul>
+            </p>
+
+    </div>
+</div>
+<div class="container" id="schedule">
+  <div class="row mt centered">
+    <div class="col-lg-6 col-lg-offset-3">
+      <h2>Schedule</h2>
+      <ol>
+        <li>
+          <h3>Motivating Example</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </li>
+        <li>
+          <h3>What is Docker and why should we care?</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </li>
+        <li>
+          <h3>Setting up a Docker Research Environment</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </li>
+        <li>
+          <h3>Break - 30 minutes</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </li>
+        <li>
+          <h3>Customising for research requirements</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </li>
+        <li>
+          <h3>Managing Data</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </li>
+        <li>
+          <h3>Deploying a Microservice Infrastructure in Minutes</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </li>
+        <li>
+          <h3>Future</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </li>
+      </ol>
+    </div>
+  </div>
+</div>
+<div class="container" id="resources">
+  <div class="col-lg-6 col-lg-offset-3">
+    <h3>Resources</h3>
+  </div>
+  <p>
+    Resources for the workshop will be added closer to the date.
+  </p>
 </div>
