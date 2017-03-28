@@ -19,7 +19,7 @@ description: "Introduction to conpects and best practices for using containeriza
                     <a class="page-scroll" href="#outline">Docker for Web Science</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#leaders">Course Leaders</a>
+                    <a class="page-scroll" href="#leaders">Workshop Leaders</a>
                 </li>
                 <li>
                     <a class="page-scroll" href="#schedule">Schedule</a>
@@ -99,27 +99,19 @@ description: "Introduction to conpects and best practices for using containeriza
               <ul>
                 <li>
                   <h3>Huw Fryer</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
+
                 </li>
                 <li>
                   <h3>Benjamin Wulff</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
+
                 </li>
                 <li>
                   <h3>Allan Third</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
+
                 </li>
                 <li>
                   <h3>Klaas Andries de Graaf</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
+
                 </li>
               </ul>
             </p>
@@ -134,19 +126,28 @@ description: "Introduction to conpects and best practices for using containeriza
         <li>
           <h3>Motivating Example</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            For the SlideWiki EU project, we needed to deliver a complex Web application with a wide variety of services.  A design decision was made to use a microservice architecture.  In this presentation, we will go into some detail as to why we elected to use a microservice architecture to ensure maximum scalability and ease of deployment.  We will demonstrate SlideWiki, and explain how the use of microservices made our development process as well as our deployment easy, and explain in more depth the reasons why a Web Scientist might wish to use Docker.
           </p>
         </li>
         <li>
           <h3>What is Docker and why should we care?</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Having established our use case, in this presentation we will introduce real world applications of using Docker for Web Science research, such as Jupyter notebooks, TensorFlow and Hadoop.  Having established the motivation, we will introduce microservice architectures, and provide a brief history of Docker, and how that can provide a solution for those use cases.
+          </p>
+          <p>
+            <strong>Activity: </strong>Participants will install Docker and Docker Compose.  Although we will not limit participants’ choice of machine, we will provide participants with an Ubuntu VM before the tutorial to provide a common environment for learning.
+          </p>
+          <p>
+            “Gotchas”.  There are a few things to be wary of when deploying a microservices architecture.  This brief presentation will warn participants of some common pitfalls before they do further activities.  A “cheat sheet” will also be provided to participants.
           </p>
         </li>
         <li>
           <h3>Setting up a Docker Research Environment</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            One of the strengths of Docker is the ability to use a complex environment setup, without having to go over the different steps every time.  This is made possible through the Docker Hub, which is the repository of available Docker images.  In addition, we will introduce the Docker “run” operation, and the different options available for starting and managing containers.  In particular, we will ensure that participants can run commands inside a container; view the logs of a container; and persist data, so that they are able to use it as a research environment.
+          </p>
+          <p>
+            <strong>Activity: </strong>Participants will download an image from the Jupyter notebook stacks, and set up a research environment.  They will familiarise themselves with the layout of a Docker container and associated actions using the image they have created.
           </p>
         </li>
         <li>
@@ -158,25 +159,34 @@ description: "Introduction to conpects and best practices for using containeriza
         <li>
           <h3>Customising for research requirements</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Although pre-existing Docker images are powerful, these will inevitably need to be modified to satisfy individual use cases.  A “Dockerfile” can be used to set up an image with a certain set of customisations, whilst also able to inherit from previous images, giving a clear record of modifications, which can be helpful in recording the provenance of research results. In this presentation, we introduce the most common commands, provide examples of how they work, and provide some of the SlideWiki Dockerfiles as examples.
+          </p>
+          <p>
+            <strong>Activity</strong> The participants will create a new image by extending the image that they used in the previous step, and redeploying their application with the new image.  They will have the option to push it to the Docker Hub, although this is not required since they would need to register an account.
           </p>
         </li>
         <li>
           <h3>Managing Data</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Having configured a research environment, it must be given access to the relevant data in a manner which persists across the creation and destruction of containers. There are several options available for managing data in Docker, such as mounting to the host, using a Docker volume, and using a “volume container”. This presentation will provide an overview of the options, give recommendations about the appropriate times to use them.  We will demonstrate the way we manage data for SlideWiki.
+          </p>
+          <p>
+            <strong>Activity: </strong>The participants will learn how to manage (named) volumes with Docker and how they can access them from the host system. In a second exercise participants will setup a volume container used by two or more containers to share data.
           </p>
         </li>
         <li>
           <h3>Deploying a Microservice Infrastructure in Minutes</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Docker separates concerns so that any individual container should only have one responsibility.  Complex research setups often require the use of multiple different components working together to achieve a goal. The deployment of such complex choreographies can be done through the use of Docker Compose, which this presentation will demonstrate, using SlideWiki as an example of a complex application.
+          </p>
+          <p>
+            <strong>Activity</strong> Participants will deploy a local instance of SlideWiki on their VMs. This exercise shows how to use docker-compose to set up an infrastructure comprised of several microservices that access a shared MongoDB and a front-end based NodeJS. The focus will be on how to implement components of a production deployment such as logging, data backup and maintenance tools.
           </p>
         </li>
         <li>
           <h3>Future</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            This presentation will summarise the tutorial, and signpost participants towards more advanced topics such as Docker networks, and Docker Swarm.
           </p>
         </li>
       </ol>
